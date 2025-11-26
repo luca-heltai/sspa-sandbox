@@ -1,0 +1,10 @@
+ 1138  git init .
+ 1140  git clone git@github.com:amoretti31/sspa-sandbox-fork-Andrea.git
+ 1143  git chekcout -b EsercitazioneAndrea
+ 1144  git branch EsercitazioneAndrea
+ 1145  git remote -v
+ 1146  git remote add heltai git@github.com:luca-heltai/sspa-sandbox-fork-Andrea.git
+ 1147  git remote -v
+ 1148  git status
+ 1149  git checkout EsercitazioneAndrea
+ 1150  git status
