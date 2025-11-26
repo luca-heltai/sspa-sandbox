@@ -1,0 +1,113 @@
+   97  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  356  ssh -T git@github.com
+  369  sudo apt install git
+  370  brew install git
+  371  git
+  372  git clone git@github.com:luca-heltai/sspa.git
+  375  git status
+  396  git status
+  397  git pull
+  452  .github/workflows
+  453  mkdir -p .github/workflows
+  454  nano .github/workflows/ci.yml
+  456  git add .github/workflows/ci.yml\ngit commit -m "Aggiunto workflow CI di GitHub Actions"\ngit push
+  457  git add .github/workflows/ci.yml
+  458  git add .github/workflows/ci.yml
+  462  cd .github
+  470  git add
+  471  git init
+  477  git init
+  479  git version
+  481  git branch -M main
+  482  git add .
+  483  git commit -m
+  484  git commit -m "Primo commit: Aggiunto progetto Fortran e workflow CI"
+  485  git remote add origin https://github.com/faustoantonelli/hpla
+  486  git remote add origin https://github.com/faustoantonelli/hpla.git\n
+  487  git push -u origin main
+  488  git remote add origin git@github.com:faustoantonelli/hpla.git\n
+  489  git remote rm origin
+  490  git remote add origin git@github.com:faustoantonelli/hpla.git\n
+  491  git push -u origin main\n
+  492  git push -u origin main\n
+  527  git init
+  528  git branch -m main
+  575  touch .gitignore
+  576  open .gitignore
+  577  git add .
+  578  git commit -m "Initial commit: OpenMP hello world with CMake"
+  580  mkdir -p .github/workflows
+  581  touch .github/workflows/CI.yml
+  582  open .github/workflows/CI.yml
+  583  git add .github/workflows/CI.yml
+  584  git commit -m "Add GitHub Actions CI workflow"
+  585  git remote -v
+  586  git remote add origin https://github.com/faustoantonelli/hpla.git
+  587  git branch -M main
+  588  git push -u origin main
+  589  git push -u origin main
+  591  git add .
+  592  git commit -m "Initial commit: OpenMP hello world with CMake"
+  594  git status
+  597  git status
+  599  git status
+  600  git add .
+  617  git push -u origin main
+  622  git push -u origin main
+  623  git push -u origin main
+  624  git push -u origin main
+  625  git push -u origin main
+  626  git status
+  627  git add
+  632  git add .github/workflows/CI.yml
+  633  cd .github
+  636  cd .github
+  641  git add .github/workflows/CI.yml
+  642  git add CI.yml
+  645  git add .
+  646  git commit -m "Aggiunto workflow CI"
+  647  git push
+  648  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  658  cat << 'EOF' > pipelines/releases.sh\n#!/bin/bash\nREPO="pandas-dev/pandas" \nJSON_INPUT=""\nif [ "$1" == "--json" ] && [ -n "$2" ]; then JSON_INPUT="$2"; fi\necho "tag | published_at | commit_sha"\necho "--- | --- | ---"\nif [ -n "$JSON_INPUT" ]; then\n    cat "$JSON_INPUT" | jq -r '.[] | "\(.tag_name) | \(.published_at) | \(.target_commitish[0:10])"'\nelse\n    if command -v curl &> /dev/null; then\n        curl -s "https://api.github.com/repos/$REPO/releases" | \\n        jq -r '.[] | "\(.tag_name) | \(.published_at) | \(.target_commitish[0:10])"'\n    else\n        echo "v1.0.0 | 2023-01-01 | abc1234567"\n    fi\nfi\nEOF\n\nchmod +x pipelines/releases.sh
+  681  git init
+  682  git branch -m main
+  752  git status
+  753  git add *
+  754  git add objblas
+  756  git status
+  759  git add *
+  761  git status
+  762  git commit -m "update 19/11 walla"
+  763  git push 
+  764  git push --force
+  767  git init
+  770  cd .git
+  778  git init
+  790  git add
+  791  git add *txt
+  792  git status
+  793  git commit
+  794  git commit -m labTre
+  796  cd .git
+  801  git log
+  808  cd .git
+  815  git branch test-branch
+  816  git branch
+  817  git branch -v
+  818  git checkout test-branch 
+  820  git rm file5.txt
+  824  git status
+  825  git restore file5.txt
+  826  git status
+  827  git restore file4.txt
+  828  git status
+  834  git clone git@github.com:faustoantonelli/sspa-sandbox-fork-Fausto.git
+  838  git checkout -b "Lab05"
+  839  git remote -v
+  843  git remote -v
+  844  git remote add fausto  git@github.com:faustoantonelli/sspa-sandbox-fork-Fausto.git
+  845  git remote -v
+  848  git checkout "Lab05"
+  849  git branch -m <branch-fausto>
+  850  git checkout -m <branch-fausto>
+  851  git checkout -b branch-fausto
