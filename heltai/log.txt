@@ -1,0 +1,2741 @@
+    4  git rebase reordered-view
+    5  git add  include/deal.II/fe/fe_coupling_values.h
+    6  git rebase --skip
+   11  git diff ea4f0e2596 8c2a897524
+   15  git commit -am 'left,right -> first,second'
+   16  git rebase -i reordered-view
+   17  git diff ee682ca69b 8c2a897524
+   18  git rebase reordered-view 
+   19  git rebase -i reordered-view 
+   23  git push -f heltai reordered-view
+   33  git add laboratorio4.md
+   34  git commit -m 'Errore nella tabella.'
+   35  git commit -am 'minors.'
+   44  git co origin/master -n non-local-dofs-2024
+   45  git co origin/master -b non-local-dofs-2024
+   46  git merge --abort
+   47  git co non-local-dofs
+   48  git remote
+   49  git remote -av
+   50  git br -av | grep zhaoweiliu
+   51  git br -av 
+   52  git co single-commit-non-local-dofs 
+   57  git diff bbf855bc98 HEAD
+   58  git diff bbf855bc98
+   60  git cherry-pick bbf855bc986d86b250df4e7886c12cc447dffe80
+   61  git diff c8b51f3c46fd6f58e
+   62  git reset 3f9f0fa35e37f925a96afc84bb5cc290ca2f7540
+   63  git add ../tests/non_local/
+   64  git commit -am 'Non local dofs. Start of reimplementation.'
+   70  git commit -am 'Fixed compilation of tests.'
+   71  git push heltai non-local-dofs-2024
+   78  wget https://unipisa.github.io/logo-matematica/png/matematica_dx_bianco.png
+   83  git blame CITATION.cff
+   84  git clone git@github.com:glideapps/quicktype.git
+  101  git add ../include/deal.II/fe/fe_coupling_values.h
+  102  git commit -am 'Review 2.'
+  103  git commit -am 'Review 3.'
+  104  git commit -am 'Review 4.'
+  105  git push heltai fe-coupling-values
+  107  git push -f heltai fe-coupling-values
+  118  git co msater
+  119  git pul 
+  154  git add ../book_prms/chapter_*prm
+  155  git add ../fsi_book/*cc
+  156  git add ../include/
+  157  git add ../source/
+  158  git add ../grids/pacman.geo ../grids/pacman_*msh
+  159  git add   ../gtests/lagrange_multiplier_test.cc
+  160  git add   ../prms/mpi_babuska_2d.prm
+  162  git add  ../apps/mpi/lagrange_multipliers.cc
+  163  git add ../gtests/dim_spacedim_tester.h
+  164  git add  ../gtests/grid_generator.cc
+  165  git commit -m 'Added some tests for the book.'
+  166  git push origin book-tests
+  172  git commit -am 'Minor fixes.'
+  173  git commit -am 'fixed minors.'
+  174  git commit -am 'Some comments.'
+  175  latexdiff-vc --git -r e927e0e main.tex
+  176  latexdiff-vc --git -r e927e0e 
+  177  latexdiff-vc --git -r e927e0e main.tex chapters/*tex
+  187  git add CMakeLists.txt lab-05.cc
+  189  git commit -am 'Lab 05.'
+  190  git commit -am 'Local refinement.'
+  192  git mv 05\ -\ Denis-Lions\ Lemma,\ Bramble-Hilbert\ lemma.pdf 06\ -\ Denis-Lions\ Lemma,\ Bramble-Hilbert\ lemma.pdf
+  193  git mv /Users/heltai/latex/courses/2023/02_NumericalMethods4PDEs/lecture_notes/06\ -\ Nitsche\,\ trace\,\ and\ inverse\ estimates.pdf  /Users/heltai/latex/courses/2023/02_NumericalMethods4PDEs/lecture_notes/08\ -\ Nitsche\,\ trace\,\ and\ inverse\ estimates.pdf 
+  194  git add 05\ -\ LAB\ -\ Poisson\ solver.pdf 07\ -\ LAB\ -\ Error\ rates,\ manufactured\ solutions.pdf
+  195  git mv 08\ -\ Nitsche,\ trace,\ and\ inverse\ estimates.pdf 09\ -\ Nitsche,\ trace,\ and\ inverse\ estimates.pdf
+  196  git mv 09\ -\ Nitsche,\ trace,\ and\ inverse\ estimates.pdf 08\ -\ Nitsche,\ trace,\ and\ inverse\ estimates.pdf
+  197  git add 09\ -\ LAB\ -\ Constraints,\ boundary\ conditions,\ hanging\ nodes.pdf
+  198  git commit -m 'Labs and rename lectures.'
+  199  git mv "09 - LAB - Constraints, boundary conditions, hanging nodes.pdf" "10 - LAB - Constraints, boundary conditions, hanging nodes.pdf"\ngit mv "08 - Nitsche, trace, and inverse estimates.pdf" "09 - Nitsche, trace, and inverse estimates.pdf"\ngit mv "07 - LAB - Error rates, manufactured solutions.pdf" "08 - LAB - Error rates, manufactured solutions.pdf"\ngit mv "06 - Denis-Lions Lemma, Bramble-Hilbert lemma.pdf" "07 - Denis-Lions Lemma, Bramble-Hilbert lemma.pdf"\ngit mv "05 - LAB - Poisson solver.pdf" "06 - LAB - Poisson solver.pdf"\ngit mv "04 - Transformations of local Finite Element Spaces.pdf" "05 - Transformations of local Finite Element Spaces.pdf"\ngit mv "03 - LAB - Intro to deal.II.pdf" "04 - LAB - Intro to deal.II.pdf"\ngit mv "03 - Degrees of Freedom and Finite Dimensional Spaces.pdf" "04 - Degrees of Freedom and Finite Dimensional Spaces.pdf"\ngit mv "02 - Lagrangian finite elements.pdf" "03 - Lagrangian finite elements.pdf"\ngit mv "01 - Introduction.pdf" "02 - Introduction.pdf"\ngit mv "00 - Introduction.pdf" "01 - Introduction.pdf"\n
+  200  git mv "01 - Introduction.pdf" "01 - Ritz Galerkin method, Cea Lemma.pdf"
+  201  git mv "02 - Introduction.pdf" "02 - Ritz Galerkin method, Cea Lemma.pdf"
+  202  git mv "01 - Ritz Galerkin method, Cea Lemma.pdf" "01 - Introduction.pdf\n"
+  203  git mv "01 - Introduction.pdf\n" "01 - Introduction.pdf"
+  204  git commit -m 'Renamed files.'
+  205  git add 10\ -\ LAB\ -\ Constraints,\ boundary\ conditions,\ hanging\ nodes.pdf
+  206  git commit -m 'Lab.'
+  207  git add 11\ -\ A\ Posteriori\ Analysis,\ global\ upper\ bounds.pdf
+  208  git commit -m 'Global upper bound.'
+  214  git remote add origin https://git@git.overleaf.com/6337050e0b8eec5caad005f0
+  215  git pull --set-upstream 
+  216  git pull --set-upstream origin master
+  233  git remote rm origin
+  234  git remote addo origin git@github.com:fdrmrc/Polydeal.git
+  235  git remote add origin git@github.com:fdrmrc/Polydeal.git
+  237  git co -b fix-warnings
+  238  git commit -am 'Remove warnings.'
+  242  git add chapters/rtree_data_structure.tex
+  243  git commit -m 'Minor.'
+  248  git add 12\ -\ LAB\ -\ Vector\ valued\ problems,\ Neumann\ bc.pdf
+  249  git commit -m 'LAB.'
+  254  git commit -m 'Initial start of lab 6'
+  255  git add lab-06.cc
+  256  git commit -m 'Lab 06.'
+  261  git pull origin mastetr
+  264  git cdiff
+  265  git commit -am 'Ack.'
+  303  git diff clip_piston_f10.pdf
+  304  git commit -am 'Small final changes.'
+  306  git add clip_piston_f10.pdf
+  307  git commit -m 'Clipped.'
+  309  git branch arxiv-submission 51dd11d
+  317  git add declarationStatement.docx highlights.tex novelty.pdf
+  318  git commit -m 'JCP docs.'
+  327  git add CMakeLists.txt poisson-sqh.cc
+  328  git commit -m 'Initial poisson solver.'
+  329  git remote add origin git@github.com:luca-heltai/poisson-sqh.git
+  333  tar cvfz per_frank.tgz .github gira.sh make_diffs.sh 
+  334  cat .github/workflows/latex.yml
+  356  git add 13\ -\ Quasi\ local\ a\ posteriori\ lower\ bound\ \(optimality\)\ .pdf
+  357  git commit -m 'Lecture 13.'
+  366  git add CMakeLists.txt lab-07.cc
+  368  git commit -m 'Experiment'
+  369  git pusbh 
+  371  git add lab-07.cc
+  372  git commit -m 'Assignement'
+  373  git commit -m 'small changes.'
+  375  git add ../../lecture_notes/14\ -\ LAB\ -\ Assemblying\ jump\ terms\ with\ mesh_loop.pdf
+  376  git commit -m 'lecture 14.;\n'
+  402  git diff content/02_pdes.tex
+  423  git add *txt
+  424  git add figures/chapter_2_example_2_3.png
+  425  git add content/02_pdes.tex
+  426  git commit -m 'Added all tests on bc.'
+  427  git push --set-upstream origin babuska-bc
+  434  git add experiments.cc
+  435  git commit -m 'Added some comments to experiments.'
+  436  git add lab-01.cc
+  437  git commit -m 'Add spare comments to lab 01.'
+  438  git commit -m 'Added a README to lab 1.'
+  440  git commit -m 'README for lab 2.`
+  441  git commit -m 'README for lab 2.'
+  443  git commit -m 'README for lab 3.'
+  445  git commit -m 'lab 4 readme.'
+  447  git commit -m 'README for lab 5.'
+  448  git commit -m 'Linear elasticity'
+  451  git commit -m 'Lab 7.'
+  455  git pull heltai non-local-dofs-2024
+  456  git pull origin fix-res-jac
+  496  git diff https://scholar.google.it/citations\?hl\=en\&user\=BaiESu4AAAAJ\&view_op\=list_works\&sortby\=pubdate
+  497  git add \tapps/function_interpolator.cc
+  498  git diff gtests/cgal_triangulation.cc
+  499  git diff  .vscode/settings.json\n
+  500  git add prms/poisson_nitsche.prm
+  501  git add book_prms/chapter_2_example_3_2_nitsche_bc.prm book_prms/chapter_2_example_3_3_strong_bc.prm 
+  502  git add gtests/nitsche_test.cc \tinclude/function_interpolator.h\n 
+  503  git commit -am 'Nitsche + Interpolator.'
+  505  git diff ../lab-07/lab-07.cc\n
+  506  git commit -am 'Solutions to lab 7.\n'
+  507  git add lab-08.cc
+  511  git commit -am 'Lab 8.'
+  519  git add src/laboratorio14.md
+  520  git commit -m 'lab11b.'
+  525  /Users/heltai/Downloads/local-ai-git-Darwin-arm64 
+  526  chmod +x /Users/heltai/Downloads/local-ai-git-Darwin-arm64 
+  527  mv /Users/heltai/Downloads/local-ai-git-Darwin-arm64 ~/bin
+  535  ~/bin/local-ai-git-Darwin-arm64 -h
+  536  ~/bin/local-ai-git-Darwin-arm64 tts "This is the text I would like to convert"
+  537  ~/bin/local-ai-git-Darwin-arm64 
+  551  git clone https://github.com/go-skynet/LocalAI\ncd LocalAI/examples/slack-qa-bot
+  553  git clone git@github.com:ggerganov/llama.cpp.git
+  585  git clone https://github.com/enricoros/big-agi.git && cd big-agi
+  587  git clone https://github.com/enricoros/big-agi.git 
+  599  ~/bin/local-ai-git-Darwin-arm64
+  608  git clone git@github.com:AbdBarho/stable-diffusion-webui-docker.git
+  618  git add 15\ -\ Discontinuous\ Galerkin\ Methods.pdf 16\ -\ Banach-Necas-Babuska.pdf 17\ -\ Saddle\ Point\ Problems.pdf
+  619  git commit -m 'Lecture notes.'
+  620  git add 17\ -\ Saddle\ Point\ Problems.pdf
+  621  git commit -m '17.'
+  640  mv ~/Downloads/local-ai-Darwin-arm64 bin/local-ai-git-Darwin-arm64
+  642  chmod +x bin/local-ai-git-Darwin-arm64 
+  643  /Users/heltai/bin/local-ai-git-Darwin-arm64 ; exit;
+  644  local-ai-git-Darwin-arm64
+  645  git clone git clone https://git@git.overleaf.com/663cc7b8f0559bc4e1428e85 2024_embedding_aware_shells
+  647  git add paper1_v4.tex ref1.bib
+  648  git commit -m 'Align and sort.'
+  649  git commit -am 'citations and phrase.'
+  652  local-ai-git-Darwin-arm64 llamacpp-worker 
+  653  local-ai-git-Darwin-arm64 --version
+  654  local-ai-git-Darwin-arm64 -v
+  655  local-ai-git-Darwin-arm64 llama-cpp-rpc
+  657  local-ai-git-Darwin-arm64 llama-cpp-rpc 0.0.0.0 8081
+  658  local-ai-git-Darwin-arm64 tts 'Ciao come stai?'
+  659  local-ai-git-Darwin-arm64 models 
+  660  local-ai-git-Darwin-arm64 models list
+  661  local-ai-git-Darwin-arm64 --models list
+  662  local-ai-git-Darwin-arm64 tts --model=whisper-1 'Ciao come stai?'
+  663  local-ai-git-Darwin-arm64 -h
+  664  local-ai-git-Darwin-arm64 run --help
+  666  export TOKEN="b3RwOgogIGRodDoKICAgIGludGVydmFsOiA5MDAKICAgIGtleTogY0M3dUx0bVpRY2E5eEtyWVhvOUpSSDQ5VnVneHFob3RXWWIzcEYwM1hPVAogICAgbGVuZ3RoOiA0MwogIGNyeXB0bzoKICAgIGludGVydmFsOiA5MDAKICAgIGtleTogTnZYRlAzQ3dvRlZpazlEMlhmWkZFOWk5UG5JZkRCOHpVSGpaUnZYRENCawogICAgbGVuZ3RoOiA0Mwpyb29tOiB5SktGSW45WW1qVVZIekVLU2NGVm0zVGw5S3djeXZ0bGpxdlhNUzJwMEk5CnJlbmRlenZvdXM6IHltSjB2eWdyUTRRMGg2OTE1eTVDNFpGTjNlcERxZGdGNzI1d1JRazlnUFoKbWRuczogcEhrZEhrbzZSdVdud2ZwYXRUZnJrMnJKdGtGWkI0d2FGT1lnWDRGd3h1YQptYXhfbWVzc2FnZV9zaXplOiAyMDk3MTUyMAo="\nlocal-ai-git-Darwin-arm64 worker p2p-llama-cpp-rpc 
+  667  local-ai-git-Darwin-arm64 --p2p
+  668  export TOKEN="b3RwOgogIGRodDoKICAgIGludGVydmFsOiA5MDAKICAgIGtleTogVm85dHZOd2w5WEtwSHRWUUE5ck8wUURTN2NXT1hlUDJ5TGNtbzU1WmlZMwogICAgbGVuZ3RoOiA0MwogIGNyeXB0bzoKICAgIGludGVydmFsOiA5MDAKICAgIGtleTogMnVKSTdxSXJnaWRSWFhlbkJkOUh4TnpWU29qOUJ1VkVsdnZjaWhPWXl0NwogICAgbGVuZ3RoOiA0Mwpyb29tOiAyaHFRU0thZXlVZnB4QnVsSGxKYnRDOVhZYmxiZDlaZHl6OG00RWMyYVUyCnJlbmRlenZvdXM6IEFlcmNVS3padjZIR3JvQmtKVEh1NldWRjBRazBaOGlYc2FndFZpbUkzN0oKbWRuczogc1djRHFZN2Jib3llbjZBbkVmMm5COFJZRml2NVZTNjU3UnpUTDVqR0F4SAptYXhfbWVzc2FnZV9zaXplOiAyMDk3MTUyMAo="\nlocal-ai-git-Darwin-arm64 worker p2p-llama-cpp-rpc --help
+  669  export TOKEN="b3RwOgogIGRodDoKICAgIGludGVydmFsOiA5MDAKICAgIGtleTogVm85dHZOd2w5WEtwSHRWUUE5ck8wUURTN2NXT1hlUDJ5TGNtbzU1WmlZMwogICAgbGVuZ3RoOiA0MwogIGNyeXB0bzoKICAgIGludGVydmFsOiA5MDAKICAgIGtleTogMnVKSTdxSXJnaWRSWFhlbkJkOUh4TnpWU29qOUJ1VkVsdnZjaWhPWXl0NwogICAgbGVuZ3RoOiA0Mwpyb29tOiAyaHFRU0thZXlVZnB4QnVsSGxKYnRDOVhZYmxiZDlaZHl6OG00RWMyYVUyCnJlbmRlenZvdXM6IEFlcmNVS3padjZIR3JvQmtKVEh1NldWRjBRazBaOGlYc2FndFZpbUkzN0oKbWRuczogc1djRHFZN2Jib3llbjZBbkVmMm5COFJZRml2NVZTNjU3UnpUTDVqR0F4SAptYXhfbWVzc2FnZV9zaXplOiAyMDk3MTUyMAo="\nlocal-ai-git-Darwin-arm64 worker p2p-llama-cpp-rpc --runner-address=0.0.0.0
+  682  local-ai-git-Darwin-arm64 --debug
+  687  git add lab-09.cc CMakeLists.txt README.md
+  688  git commit -m 'Lab 9.'
+  689  gits 
+  691  git add manufactured_stokes.ipynb
+  692  git add lab-09.cc
+  693  git commit -m 'include.'
+  697  git diff _toc.yml
+  698  git diff notes/
+  712  git add lab*md
+  713  git add projects.md
+  714  git add _toc.yml\n
+  715  git add ../labs/lab-09/README.md\n
+  716  git commit -m 'Projects.'
+  718  git rm lab-00.md
+  719  git commit -m 'Removed lab-00'
+  858  git pull origin stable
+  875  git diff var/spack/repos/builtin/packages/boost/package.py
+  876  git rebase develop
+  883  git rebase origin/develop 
+  884  git add var/spack/repos/builtin/packages/boost/package.py
+  885  git restore --staged var/spack/repos/builtin/packages/dealii/package.py
+  887  git rebase -i origin/develop 
+  888  git reset --hard dealii-build-package
+  889  rm -rf .git/rebase-merge
+  890  git rebase -i origin/develop
+  971  git remote set-url origin https://git.overleaf.com/634e854ae403226935b5dff6
+  972  git remote set-url origin https://git@git.overleaf.com/634e854ae403226935b5dff6
+  974  git grep "Selection"
+  975  git grep "Selection" *
+ 1034  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+ 1040  git co step-86
+ 1043  git reset origin/master
+ 1044  git add include/deal.II/lac/petsc_ts.*
+ 1045  git commit -m 'PETScWrappers::TimeStepper support resizing while solving'
+ 1046  git add  examples/step-26/doc/results.dox 
+ 1047  git add heat_equation.prm
+ 1048  git commit -m 'step-86: tutorial for PETScWrappers::TimeStepper'
+ 1050  git  branch heltai/step-86 step-86-old
+ 1051  git  branch step-86-old heltai/step-86
+ 1054  git add step-86.cc
+ 1055  git push -f heltai step-86
+ 1056  git push -f bangerth step-86
+ 1092  git clone git@github.com:ste-dtst/nmpde-project.git ManciniStefano
+ 1102  git co -b fix-proj
+ 1103  git commit -am 'Fixes #1'
+ 1104  git push origin fix-proj
+ 1116  git clone git@github.com:michelderu/build-your-own-rag-chatbot.git
+ 1121  git clone git@github.com:Josh-XT/AGiXT.git
+ 1127  cat github_rsa
+ 1128  vi github-agixt-api.key
+ 1129  cat github-agixt-api.key
+ 1166  git clone git@github.com:luca-heltai/dealii-rag-chatbot.git
+ 1167  git mv hospital_neo4j_etl dealii_neo4j
+ 1178  git clone git@github.com:neuml/paperai.git
+ 1184  git clone git@github.com:Frost-group/The-Oracle-of-Zotero.git
+ 1200  git co -b dim-spacedim
+ 1202  wget https://raw.githubusercontent.com/Neargye/magic_enum/master/include/magic_enum/magic_enum.hpp
+ 1203  git diff .
+ 1205  git diff parsed_tools/magic_enum.hpp
+ 1218  git commit -am 'Change the way dim and spacedim work.'
+ 1228  git commit -am 'Make sure dim/spacedim from prm is honored.'
+ 1229  git push origin dim-spacedim
+ 1231  cat .github/workflows/dependencies.yml
+ 1239  git commit -am 'Indented.'
+ 1246  git co origin/master -b buildx-multi-platform
+ 1247  git co -b docker-buildx-multi-platform
+ 1248  git commit -am 'Add multi platform docker images.'
+ 1249  git push -f heltai docker-buildx-multi-platform
+ 1253  git co multiplatform
+ 1254  git commit -m 'Master.'
+ 1258  git add build.sh
+ 1259  git add ../include/parsed_tools/constants.h
+ 1260  git commit -m 'Multiplatform buildx.'
+ 1261  vi .github/workflows/docker.yml
+ 1262  git commit -m 'workflow.'
+ 1264  git br -D dim-spacedim
+ 1265  git co fix-warnings
+ 1266  git diff origin/main
+ 1268  git commit -am 'logstream.'
+ 1269  git push origin fix-warnings
+ 1270  git push -f origin fix-warnings
+ 1271  git br -D fix-warnings
+ 1274  git clone git@github.com:exactlab/exact-rag.git
+ 1295  git commit -am 'Added back focal build.'
+ 1296  git push --set-upstream origin docker-buildx-multi-platform
+ 1297  git push heltai docker-buildx-multi-platform
+ 1298  git commit -m 'Try to build on different runners.'
+ 1299  git co -b fix-other-warnings
+ 1300  git commit -m 'Braces.' 
+ 1301  git commit -m 'Spaces.'
+ 1308  git co -b docker-fix-multiarch
+ 1314  git commit -m 'Test multiarch'
+ 1315  cat ~/dealii/dealii/.github/workflows/docker.yml
+ 1316  git add ../../.github/workflows/docker.yml
+ 1317  git commit -m 'Test token.'
+ 1318  git push heltai docker-fix-multiarch
+ 1322  git restore --staged  ../source/project.cc
+ 1328  git co -b fix-pvd
+ 1329  git add ../../source/project.cc
+ 1330  git commit -m 'Closes #3'
+ 1331  git push origin fix-pvd
+ 1332  git diff 8411b91
+ 1333  git diff 8411b91 4294100
+ 1334  git diff 4294100 8411b91
+ 1339  git clone git@github.com:2listic/coral-editor.git
+ 1356  wget https://raw.githubusercontent.com/nlohmann/json/develop/single_include/nlohmann/json.hpp
+ 1401  git add publication-2024.bib
+ 1402  git rebase upstream/master
+ 1412  git co -b najwa
+ 1413  git commit -m 'Articles by Najwa, Daniele, and Lucia.'
+ 1414  git push origin najwa
+ 1416  git add *bib
+ 1425  git co -b dealii-backend
+ 1426  git add json/
+ 1439  cp -r ~/c++/bare-dealii-app/.github .
+ 1449  git add source/*
+ 1451  git restore --staged  ../output/.gitignore
+ 1452  git commit -m 'Trivial types. CI.'
+ 1453  git add ../source/main.cc   ../../.github/
+ 1454  git commit -m 'CI.'
+ 1463  git add  ../../.github/workflows/tests.yml
+ 1464  git commit -m 'fix branch name.'
+ 1465  cat .github/workflows/docker.yml
+ 1467  git add figures/pacman_domain.pdf
+ 1468  git commit -m 'pacman.'
+ 1469  git add chapter_2_example_1.png
+ 1470  git commit -m 'new pic.'
+ 1472  git rm ../source/dummy.cc
+ 1475  git diff ../gtests/trivial_types.cc
+ 1476  git restore ../gtests/trivial_types.cc
+ 1477  git commit -am 'Step-1 working.'
+ 1478  git add source/node_object.cc
+ 1483  git add gtests/serialize.cc
+ 1484  git commit -m 'Test on serialization.'
+ 1485  git commit -m 'object -> array for args.'
+ 1488  git add  ../gtests/dealii_examples.cc ../gtests/dealii_types.cc  ../include/coral.h
+ 1489  git commit -m 'Inheritance.'
+ 1492  git add ../gtests/dealii_examples.cc ../include/register_types.h
+ 1493  git commit -m 'Register files.'
+ 1502  wget https://github.com/Neargye/magic_enum/releases/download/v0.9.6/magic_enum-v0.9.6.tar.gz
+ 1508  git add magic_enum/magic_enum*
+ 1509  git diff .gitignore
+ 1510  git diff CMakeLists.txt
+ 1511  git commit -m 'cgal.'
+ 1512  git push origin fix-other-warnings
+ 1513  git rebase fix-other-warnings
+ 1519  git diff | grep reference
+ 1520  git diff | grep mapping
+ 1527  git clone git@github.com:marcocarotta/coupled-LaplaceBeltrami-Poisson.git CarottaMarco
+ 1538  git add  content/03_bvp_with_interfaces.tex table-commands.sty 
+ 1539  cat numerical_data/.gitignore
+ 1542  git add chapter_2_example_3_4_nitsche_interface_poisson.txt
+ 1543  git commit -m 'Nitsche.'
+ 1564  git add postprocess.ipynb
+ 1565  git add ../content/03_bvp_with_interfaces.tex chapter_2_example_3_4_nitsche_interface_poisson_v2.txt chapter_2_example_3_5_nitsche_cut_fem.txt
+ 1566  git commit -m 'Unfitted Nitsche.'
+ 1571  git add chapter_3_example_3_4_*png
+ 1572  git add  ../content/03_bvp_with_interfaces.tex
+ 1573  git commit -m 'Figures of solution for CutFEM.'
+ 1601  git diff dealii_types.cc
+ 1602  git add ../../.gitignore
+ 1603  git add dealii_examples.cc
+ 1604  git add dealii_types.cc
+ 1605  git add  node_object_tests.cc
+ 1606  git add ../include/coral.h ../include/register_types.h ../source/node_object.cc
+ 1607  git add serialize.cc
+ 1608  git commit -m 'Inputs/outputs.'
+ 1614  git add -a
+ 1615  git add ../gtests/dealii_types.cc ../gtests/node_object_tests.cc  ../include/register_types.h  ../source/main.cc
+ 1616  git commit -m 'Fix tests and methods with same signature and different names.'
+ 1636  git diff 74d1b514ea
+ 1637  git diff 475fe9977a
+ 1638  git reset dd460a0eb0
+ 1722  git co -b dealii-9.6-rc1
+ 1723  git commit -m 'dealii:v9.6-rc1'
+ 1749  find . -name .git
+ 1750  rm -rf ./brew/.git ./spack/.git 
+ 1771  git commit -m 'Comply with flake8'
+ 1772  git rebase heltai/dealii-9.6-rc1 
+ 1798  git restore main.cpp
+ 1818  git commit -m 'Fix name.'
+ 1822  git add ../include/coral.h
+ 1823  git add  ../gtests/dealii_types.cc
+ 1824  git commit -m 'Fix Aider changes.'
+ 1825  git commit -m 'v9.6.0'
+ 1831  git restore examples/step-80/CMakeLists.txt
+ 1844  git config --global core.editor='code --wait'
+ 1845  git config --global core.editor "code --wait"\n
+ 1846  git config --global core.editor "code -n --wait"\n
+ 1847  git config --global -e
+ 1849  git co -b patterns-enums
+ 1869  git add ../cmake/configure/configure_50_magic_enum.cmake
+ 1870  git add  ../cmake/modules/FindDEAL_II_MAGIC_ENUM.cmake
+ 1871  git add  ../include/deal.II/base/config.h.in
+ 1872  git add  ../tests/parameter_handler/pattern_tools_14.cc
+ 1873  git add  ../tests/parameter_handler/pattern_tools_14.output
+ 1874  git add  ../include/deal.II/base/patterns.h
+ 1876  git mv  ../tests/parameter_handler/pattern_tools_14.output  ../tests/parameter_handler/pattern_tools_14.with_magic_enum=true.output
+ 1880  git commit -m 'Added support for magic_enum.'
+ 1884  git rm pattern_tools_15.c
+ 1885  git rm -f pattern_tools_15.c
+ 1886  git add pattern_tools_15.*
+ 1887  git mv pattern_tools_15.output pattern_tools_15.with_magic_enum=true.output
+ 1888  git commit -m 'Custom enums.'
+ 1889  git rm .devcontainer/Dockerfile
+ 1909  git co origin/master -b tree-worker
+ 1912  cd github/
+ 1913  git push origin multiplatform 
+ 1914  git commit -m 'Starting point.'
+ 1915  git push heltai step-80
+ 1916  git pull --rebase heltai step-80
+ 1918  git co -b step-80-new
+ 1919  git push --set-upstream heltai step-80-new
+ 1920  git commit -am 'Assemble coupling'
+ 1921  git commit --amend -a 
+ 1922  git commit -am 'DSP.'
+ 1923  git clone git@github.com:chaos-polymtl/lethe.git
+ 1925  git commit -m 'Initialize coupling.'
+ 1926  git add step-80.cc
+ 1927  git commit -m 'AA op.'
+ 1937  git commit -am 'Generated ops.'
+ 1963  github init .
+ 1966  git add example.cc
+ 1967  git commit -m 'Starting point.\n'
+ 1969  git rm example_test.cc
+ 1970  git commit -m 'starting point.'
+ 2011  git commit -m 'added instructions for devs.'
+ 2012  git commit -m 'indent.'
+ 2015  git commit -m 'Timeline.'
+ 2016  git commit -m 'README timeline.'
+ 2017  git pull --reabse
+ 2020  git commit -m 'Add instructions on timeline.'
+ 2022  git commit -m 'Add spreadsheet instructions.'
+ 2024  git clone git@github.com:dealii/website-large_assets.git
+ 2033  git commit -m 'cuda_constexptr'
+ 2034  git commit -m 'Indent.'
+ 2040  git commit -am 'Review.'
+ 2041  git push heltai patterns-e
+ 2042  git commit -am 'Improve test comments.'
+ 2043  git push heltai patterns-enums
+ 2050  git add replies
+ 2051  git reset ec710d1
+ 2052  git add replies/answer.tex
+ 2053  git commit -m 'replies.'
+ 2054  git tag -v
+ 2055  git tag r1-base
+ 2056  git diff d93dcb8
+ 2057  git wdiff d93dcb8
+ 2058  git wdiff ec710d1 51dd11d
+ 2059  git commit -am 'Remove comments'
+ 2060  git wdiff 3b462c7 8e22c71
+ 2061  git remote-v
+ 2062  git clone git@github.com:pherbers/MST-Dendrites.git
+ 2082  git remote set-url origin git@github.com:luca-heltai/MST-Dendrites.git
+ 2083  git co -b 'Fix for 4.2'
+ 2084  git co -b v4.2-compatibility
+ 2085  git add mst_blender/mstree.py
+ 2086  git push origin v4.2-compatibility
+ 2088  git reset --hard master
+ 2089  git commit -m 'Remove np.int and np.bool'
+ 2090  git commit -am 'Remove np.int and np.bool'
+ 2091  git push -f origin v4.2-compatibility
+ 2095  git add mst_generation.ipynb
+ 2096  git commit -m 'Added mst_generation.'
+ 2097  git clone git@github.com:OpenCCO-team/OpenCCO.git
+ 2116  git clone git@github.com:DGtal-team/DGtal.git
+ 2151  git clone git@github.com:Gecode/gecode.git
+ 2152  git clone git@github.com:DGtal-team/DGtalTools.git
+ 2162  git clone git@github.com:DGtal-team/DGtalTools-contrib.git
+ 2271  git add figures/domain.p*
+ 2272  git add ../blender/domain.blend
+ 2273  git add main_ijnmbe.tex
+ 2274  git rm -f  main_ijnmbe.pdf main_ijnmbe.pag
+ 2275  git commit -am 'Domain figure + small changes to intro.'
+ 2285  git add main_ijnmbe.tex ../blender/domain.blend
+ 2286  git add figures/domain*
+ 2287  git commit -m 'Cleanup introduction.'
+ 2305  git commit -m 'FECouplingValues.'
+ 2306  git reset --hard heltai/dealii-9.6-rc1
+ 2307  git push -f heltai dealii-9.6-rc1 
+ 2309  git commit -m 'Complex.'
+ 2311  git commit -am 'Refinining intro.'
+ 2312  cat .github/workflows/merged.yml
+ 2316  git branch -D temp_merge_branch
+ 2317  git branch -D temp_merge_branch || true
+ 2318  git branch -D temp_merge_branch || echo ok
+ 2319  git branch -D temp_merge_branch 2&>/dev/null || echo ok
+ 2320  git branch -D temp_merge_branch 2&>/dev/null || true
+ 2323  cat ~/.ssh/github-agixt-api.key
+ 2327  git commit -m 'cuda_constexpr trilinos.'
+ 2328  git push origin dealii-9.6-rc1
+ 2329  brew tap mediar-ai/screenpipe https://github.com/mediar-ai/screenpipe.git\nbrew install screenpipe\n
+ 2336  curl -O https://raw.githubusercontent.com/rmusser01/tldw/main/Helper_Scripts/Installer_Scripts/MacOS-Install_Updater.sh
+ 2339  curl -O https://raw.githubusercontent.com/the-crypt-keeper/tldw/refs/heads/main/Helper_Scripts/Installer_Scripts/MacOS-Run-Install-Update.sh
+ 2358  git rm  ../poisson-sqh.cc
+ 2359  git add  ../sqh.h ../poisson_sqh.cc 
+ 2361  git commit -m 'Minimal compiling example, no convergence.'
+ 2362  git restore ../poisson_sqh.cc
+ 2364  git commit -am 'Running?'
+ 2365  git push origin mas
+ 2369  git mv sqh.h include
+ 2371  git mv poisson_sqh.cc source
+ 2375  git add gtest_main.cc
+ 2376  git add tests.cc
+ 2378  git add main.cc
+ 2384  git rm tests/gtest_main.cc  tests/tests.cc 
+ 2385  git add CMake
+ 2386  cp -r ~/c++/bare-dealii-app/.github .github
+ 2387  cat .github
+ 2388  ls .github
+ 2389  cd .github/workflows
+ 2391  git add doc/
+ 2392  git commit -m 'Gtests.'
+ 2393  git commit -am 'Fixed workflows.'
+ 2397  git commit -am 'Fix workflows. 2.'
+ 2402  git commit -am 'Fixed sign.'
+ 2418  git commit -m 'Added a README file.'
+ 2422  cat .github/workflows/doxygen.yml
+ 2425  git restore doc/html
+ 2426  git commit -m 'Doxygen.'
+ 2433  git add LICENSE.md README.md
+ 2439  git add scripts/update_copyright.sh gtests/ include/ source/
+ 2440  git commit -m 'License.'
+ 2447  git br -D temp_merge_branch
+ 2448  git add numerical_data/.gitignore
+ 2450  git add merge.sh
+ 2459  git commit -am 'Fixed compilation and includes.'
+ 2464  git co -b non-matching-coupling
+ 2465  git commit -am 'Introduction to non-matching coupling.'
+ 2466  git co babuska-bc
+ 2467  git commit -am 'Fix upload.'
+ 2468  git co -b fix-compilation-issues-and-ci
+ 2469  git co fix-compilation-issues-and-ci
+ 2470  git rebase master
+ 2471  git push -f origin non-matching-coupling
+ 2475  git add ../prms/truncated_fundamental_2d.prm
+ 2484  git rebase origin/develop
+ 2485  git push -f heltai dealii-9.6-rc1
+ 2507  history | grep git
+ 2598  rm -rfv `find . -name .git`
+ 2620  git commit -am 'Several small improvements.'
+ 2621  git add ../prms/constant_control.prm
+ 2624  git commit -am 'Change some replies.'
+ 2625  git commit -am 'new comments.'
+ 2627  git stahs
+ 2631  git add scripts/plots.ipynb
+ 2632  git commit -m 'Fixed examples.'
+ 2633  cat .github/workflows
+ 2635  git rm .gitlab-ci.yml
+ 2638  git s t. 
+ 2643  git commit -m 'update a few things.'
+ 2645  git commit -am 'Revamp.'
+ 2647  git commit -am 'Fix doxygen.'
+ 2648  git co -b main
+ 2649  git br -D master
+ 2650  git br -D   remotes/origin/master
+ 2651  git commit -am 'Fix badges.'
+ 2654  git add ../gtests/GM
+ 2655  git add ../gtests/CMakeLists.txt
+ 2656  git commit -m 'Fix gtest.'
+ 2657  git commit -am 'Links and indentation.'
+ 2658  git commit -am 'Try to fix indent.'
+ 2659  git commit -am 'Update branch.\n'
+ 2660  git commit -am 'git config.'
+ 2668  git commit -am 'Minor.'
+ 2671  git commit -am 'Updated copyrigth.'
+ 2679  git commit -m 'non-matching interpolator start. '
+ 2680  git commit -am 'non-matching interpolator start. '
+ 2681  git push --set-upstream origin non-matching-coupling
+ 2698  git add point_location.pdf
+ 2699  git commit -am 'Figure.'
+ 2700  git commit -am 'colors.\n\n'
+ 2703  git commit -m 'ERC support.'
+ 2722  git commit -m 'fix update copyright'
+ 2723  git add scripts/update_copyright.sh; git commit --amend -m 'Fix update copyright.'
+ 2734  git add scripts/update_copyright.sh; git commit --amend -m 'Fix update copyright.'; git reset --hard HEAD
+ 2735  git commit -am 'Updated copyright.'
+ 2740  git add copyright.txt
+ 2741  git commit -m 'Update copyright script.'
+ 2742  git commit -am 'Updated all copyrights.\n'
+ 2755  git clone https://git@git.overleaf.com/670e67da9fe439f8e7e15a6d
+ 2756  git clone https://git@git.overleaf.com/670e67da9fe439f8e7e15a6d .
+ 2757  git commit -am 'Changes.'
+ 2758  git restore --staged figures/droplet.pdf.autosave.ipe
+ 2759  git add figures/droplet.pdf
+ 2760  git commit -m 'Energy principle.'
+ 2761  git commit -am 'Variational.'
+ 2762  git commit -am 'Final remarks and discretization.'
+ 2772  git commit -m 'First working version.'
+ 2776  git clone git@gitlab.com:nano-dimension/additiveflow/dropletsimulation.git .
+ 2777  mv README.md .git .. 
+ 2780  git commit -m 'Added 2d Code.'
+ 2781  git co -b first-attempt
+ 2782  git push origin first-attempt
+ 2786  git co -b cco
+ 2787  git add data/tree_3D.xml
+ 2788  git diff gtests/reference_inclusions_basis.cc
+ 2789  git commit -m 'Try to read CCO files.'
+ 2790  git commit --amend -am 'Try to read CCO files.'
+ 2792  git commit -am 'Small changes in doc.'
+ 2793  git push --set-upstream origin first-attempt
+ 2798  git co -b update-copyright
+ 2799  git commit -am 'Fix indent in copyright.'
+ 2800  git push origin update-copyright
+ 2801  git co -b remove-main
+ 2803  git rm source/main.cc
+ 2804  git mv execs/example.cc execs/laplacian.cc
+ 2812  git commit -am 'Fixed doxygen generation, removed main.'
+ 2813  git commit -am 'Fixed indentation.'
+ 2814  git push origin remove-main
+ 2824  wget https://raw.githubusercontent.com/dotnet/runtime/main/src/coreclr/pal/inc/rt/sal.h
+ 2825  git clone git@github.com:microsoft/DirectXMath.git
+ 2834  git clone https://gist.github.com/fdrmrc/336dfc2680d13596c47c5c6a7332d674 
+ 2839  git commit -am 'Some games with ELMAN.'
+ 2840  git remote set-url origin git@gist.github.com:fdd46e92014af5ce1a68f7d0ba324705.git
+ 2857  git rm LICENSE
+ 2860  git add scripts/update_copyright.sh
+ 2861  git add apps/app_*
+ 2862  git add include/
+ 2863  git add source/
+ 2864  git add gtests/
+ 2865  git add  doc/Doxyfile
+ 2866  git add doc/copyright.txt
+ 2867  git diff scripts/dr.sh
+ 2868  git add scripts/dr.sh
+ 2869  git commit -am 'Update docs, Licence, and README.'
+ 2875  git commit -am 'fixed v font.'
+ 2876  git co -b fix-font
+ 2877  git push origin fix-font
+ 2878  git add  ../.github/workflows/tests.yml
+ 2879  git commit -m 'run also gtests.'
+ 2880  git push origin cco
+ 2898  git add droplet_dynamics.ipynb droplet_dynamics_collocation.ipynb
+ 2899  git commit -m 'Fixed reparametrization in weak form.'
+ 2900  git co -b reparametrization
+ 2902  git commit -m 'Substrate.'
+ 2903  git commit -m 'save.'
+ 2907  git pull heltai dealii-9.6-rc1
+ 2908  code -n share/spack/gitlab/cloud_pipelines/stacks/e4s-oneapi/spack.yaml\n
+ 2909  git add share/spack/gitlab/cloud_pipelines/stacks/e4s-oneapi/spack.yaml
+ 2910  git commit -m 'Disable taskflow on oneapi.'
+ 2911  git push heltai dealii-9.6-rc1
+ 2921  git add droplet_dynamics_collocation.ipynb
+ 2922  git add droplet_dynamics*
+ 2923  git commit -m 'working with sigma substrate.'
+ 2924  git add main.tex figures/droplet.pdf
+ 2925  git commit -m 'Added latex.'
+ 2929  wget https://unipisa.github.io/logo-matematica/png/matematica_unipi_dx_blu.png
+ 2930  wget https://unipisa.github.io/logo-matematica/png/matematica_unipi_dx_nero.png
+ 2931  wget https://unipisa.github.io/logo-matematica/png/matematica_unipi_dx_bianco.png
+ 2944  git add droplet_dynamics.ipynb
+ 2949  git clone git@github.com:dealii-X/homepage.git dealii-X-webpage
+ 2952  git add LICENSE.md
+ 2956  git add overview.md partners.md contact.md
+ 2960  git add docs/about/contact.md
+ 2961  git add docs/about/partners.md
+ 2962  git add docs/stylesheets/extra.css
+ 2963  git add environment.yml
+ 2964  git add mkdocs.yml
+ 2965  git add hook_create_symlinks.py
+ 2976  git add  about/overview.md
+ 2980  git add index.md
+ 2981  git mv .gitignore ../
+ 2984  mkdir .github/workflows/deploy.yaml
+ 2985  mkdir -p .github/workflows/
+ 2986  touch .github/workflows/deploy.yaml
+ 2988  git add .github/workflows/deploy.yaml 
+ 2989  git add docs/index.md
+ 2990  git commit -m 'Added base for github page.'
+ 2991  git commit -am 'Added markdown include.'
+ 2993  git clone https://github.com/dealii-X/dealii-X.github.io
+ 2994  mkdir dealii-X.github.io
+ 2996  git clone git@github.com:dealii-X/dealii-X.github.io.git .
+ 2999  git co -b newmain
+ 3001  git remote add rep git@github.com:dealii-X/dealii-X-homepage
+ 3002  git remote set-url rep git@github.com:dealii-X/dealii-X-homepage.git
+ 3003  git fetch rep
+ 3004  git remote set-url rep git@github.com:dealii-X/homepage.git
+ 3005  git co -b gh-pages
+ 3006  git reset --hard rep/main
+ 3007  git push -f origin/main 
+ 3008  git push -f origin main 
+ 3009  git co gh-pages
+ 3010  git push -f origin gh-pages
+ 3012  git remote set-url origin git@github.com:dealii-X/dealii-X.github.io.git
+ 3013  git add  .github/workflows/deploy.yaml
+ 3014  git commit -am 'Minimal web page.'
+ 3018  git co cgal-bug-in-input-grid
+ 3019  git diff tests/cgal/cgal_surface_triangulation_01.cc
+ 3020  git diff doc/news/changes/major/20220426FederHeltai
+ 3026  git remote add timo git@github.com:tjhei/dealii.git \n
+ 3027  git fetch timo 
+ 3028  git co q_iso_q1_sparsity_pattern
+ 3035  git commit -m 'Added test. REMOVE ME.'
+ 3036  git rebase timo q_iso_q1_sparsity_pattern
+ 3037  git fetch tim
+ 3038  git diff ../tests/fe/local_sparsity_q_iso_q1.output
+ 3039  git add  ../tests/fe/local_sparsity_q_iso_q1.cc  ../tests/fe/local_sparsity_q_iso_q1.output  
+ 3040  git add ../tests/fe/local_sparsity_q_iso_q1.cc 
+ 3041  git commit -m 'Expected output.'
+ 3043  git commit -m 'Fixed test. Now it checks the output.'
+ 3044  git push '
+ 3045  git add ../tests/fe/local_sparsity_q_iso_q1.cc
+ 3046  git commit -m 'Added documentation to test.'
+ 3047  git fetch timo
+ 3048  git rebase timo/q_iso_q1_sparsity_pattern
+ 3050  git add ../tests/fe/local_sparsity_q_iso_q1.output
+ 3051  git commit -m 'Fixed output.'
+ 3052  git push timo q_iso_q1_sparsity_pattern
+ 3056  git co deal_v_9_6_modifications
+ 3059  cat .github/workflows/indentation.yml
+ 3060  cat .github/workflows/tests.yml
+ 3061  git commit -am 'Move to 9.6.0.'
+ 3063  git diff .clang-format
+ 3064  git commit -m 'Updated clang format style.'
+ 3065  git commit -am 'Changes in README.'
+ 3066  git push origin deal_v_9_6_modifications
+ 3074  git clone https://github.com/ste-dtst/nmpde-notes
+ 3132  git clone git@github.com:lfmc/VItA.git
+ 3133  git co -b base-coupled 7bef49befbcdce7ee6c7a9ddfa3c36f4bbe9b6b5
+ 3134  git clone git@gitlab.com:lucas.mueller/fvm.git 1d_fvm_lucas
+ 3135  git co cco
+ 3137  git co -b update-docker
+ 3138  git rm .gitlab-ci.yml .travis.yml
+ 3145  git commit -am 'Update docker and download 1d solver library.'
+ 3146  git commit -m 'update order of actions.'
+ 3147  git commit -am 'update order of actions.'
+ 3148  git push origin update-docker
+ 3149  git push -f origin update-docker
+ 3150  git rm .vscode/launch.json
+ 3152  git co mpi_test
+ 3153  git co base-coupled
+ 3154  git reset --hard mpi_test
+ 3155  git cherry-pick 2fe868e
+ 3156  git rm scripts/dr.sh
+ 3157  git cherry-pick --continue
+ 3158  git push origin base-coupled
+ 3162  git add python/*py
+ 3163  git add latex/main.tex
+ 3164  git add latex/figures/droplet.pdf
+ 3165  git add python/droplet_dynamics.ipynb
+ 3166  git commit -m 'Cleanup. No cigar yet.\n'
+ 3167  git rev-list --objects --all --missing=print |\n  git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' |\n  sed -n 's/^blob //p' |\n  sort --numeric-sort --key=2 |\n  cut -c 1-12,41- |\n  $(command -v gnumfmt || echo numfmt) --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest\n
+ 3169  git co -b coupled-squashed
+ 3170  git rebase -h
+ 3171  git rebase -i 
+ 3172  git reset --hard f5066a4
+ 3173  git reset 969ef18
+ 3174  git restore 3d_output_state.pvsm
+ 3179  git restore . 
+ 3180  git add ../source/elasticity.cc
+ 3181  git commit -m 'All changes from Camilla.'
+ 3182  git add  ../apps/app_pseudocoupling1D.cc
+ 3185  git -rm -r mesh
+ 3186  git -rm -rf mesh
+ 3187  git rm -rf mesh
+ 3188  git rm inclusions_data_bifurcation_1dadapted.txt
+ 3189  git rm inclusions_points_bifurcation_1dadapted.txt
+ 3190  git rebase -i 969ef18
+ 3191  git rebase -i 7bef49befbcdce7ee6c7a9ddfa3c36f4bbe9b6b5
+ 3192  git add source/coupled_elasticity.cc include/coupled_elasticity.h
+ 3193  git add apps/app_coupled_elasticity.cc
+ 3194  git add apps/app_pseudocoupling1D.cc
+ 3196  git co 7bef49befbcdce7ee6c7a9ddfa3c36f4bbe9b6b5 -- include/elasticity.h source/elasticity.cc apps/app_elasticity.cc
+ 3204  git co couplingWIAS
+ 3209  git commit -am 'Fix errors and warnings.'
+ 3210  git push -f coupled_elasticity
+ 3211  git push -f origin coupled_elasticity
+ 3213  git push -f origin coupled-squashed
+ 3217  git commit -am 'Almost fix.'
+ 3218  git commit -am 'Fix linking issue.'
+ 3220  git add .github/workflows/indentation.yml
+ 3221  git commit -am 'Indentation.'
+ 3222  git push origin coupled-squashed
+ 3224  git push  --set-upstream origin coupled-squashed\n
+ 3225  cat ~/dealii/dealii/.github/workflows/linux.yml
+ 3226  git commit -am 'Allow run as root.'
+ 3237  git add split_file.py
+ 3238  git add -f split_file.py
+ 3239  git add -f generate_vtk.py
+ 3240  git add -f README.md
+ 3241  git co -b lorthois
+ 3242  git commit -m 'Added lorthois datasets.'
+ 3257  git add reduced_model.py reduced_test.py
+ 3258  git commit -m 'Reduced model working.'
+ 3259  git add ../latex/main.tex
+ 3260  git add iga_tools.py
+ 3261  git commit -m 'Simplified model and explanation of contact line velocity.'
+ 3267  git co -nb visualizer
+ 3268  git co -b visualizer
+ 3269  git add DropVisualiser.py 
+ 3271  git add initialControlPoints.csv DropVisualiser.py
+ 3272  git commit -m 'Visualize smooth.'
+ 3273  git push origin visualizer
+ 3277  git submodule add -b v9.6.0 https://github.com/dealii/dealii.git
+ 3278  git submodule add -t v9.6.0 https://github.com/dealii/dealii.git
+ 3279  git add DropVisualiser.py
+ 3280  git commit -m 'Output better plots.'
+ 3281  git rebase reparametrization
+ 3282  git co reparametrization
+ 3283  git pull visualizer
+ 3284  git reset --hard visualizer
+ 3285  git push origin reparametrization
+ 3287  git add ../../AdditiveFlow/c++/src/Droplet3d-Console/.clang-format 
+ 3288  git add ../c++/src/Droplet3d-Console/.clang-format 
+ 3289  git add figures/point_location.pdf 
+ 3290  git commit -am 'fix notation.'
+ 3291  git push origin non-matching-coupling
+ 3292  git co non-matching-coupling
+ 3293  git co -b new-tests
+ 3294  git commit -am 'non-compiling tests.s'
+ 3297  git add AF-CodeStyle.editorconfig
+ 3298  git commit -m 'Style file.'
+ 3299  git pull --rebase origin new-tests
+ 3300  git push --set-upstream origin new-tests
+ 3324  git add droplet_computation.py 
+ 3326  git add droplet_computation.ipynb
+ 3331  git rm droplet_computation.ipynb
+ 3332  git rm -f droplet_computation.ipynb
+ 3336  git add  droplet_computation.py
+ 3337  git mv droplet_computation.py evolution_3d.py
+ 3340  git add evolution_3d.py
+ 3341  git commit -m 'Working 3d python version.\n'
+ 3361  git mv cap* grids
+ 3368  git add ../.clang-format
+ 3369  git add main.cpp stdafx.h
+ 3371  git add IGLHandler.*
+ 3373  git mv ../cap.msh .
+ 3375  git add cap.*
+ 3377  git add src/main.cpp
+ 3378  git add src/stdafx.h
+ 3381  git commit -am 'First attempt to integrate.'
+ 3382  git push origin new-tests
+ 3387  git commit -am 'Buggy.'
+ 3394  git add coarse_cap.msh
+ 3395  git add cap.geo
+ 3396  git revert cap.msh
+ 3397  git restore cap.msh
+ 3398  git commit -m 'Added coarser grid.'
+ 3401  git commit -am 'Small cleanups.'
+ 3402  git co -b igl-local-mac
+ 3403  git pull --rebase origin/new-tests
+ 3404  git pull rebsae origin/new-tests
+ 3405  git pull rebase origin/new-tests
+ 3406  git pull rebase origin new-tests
+ 3407  git commit -am 'Furhter cleanup.'
+ 3409  git commit -am 'Remove dependencies on viewer.'
+ 3410  git push  --set-upstream origin igl-local-mac
+ 3411  git commit -am 'Clenaup.'
+ 3412  git push origin igl-local-mac
+ 3413  git rebase origin/new-tests
+ 3414  git push -f origin igl-local-mac
+ 3427  git stash -l
+ 3428  git stash list
+ 3429  git commit -am 'Cleanup and json.'
+ 3430  git commit -am 'Working! Drift velocity still there.'
+ 3431  git commit -am 'git st
+ 3432  git commit -am 'Fixed bugs. Added parameters.'
+ 3433  git commit -am 'Fixed average velocity drift.'
+ 3434  git add json.hpp
+ 3435  git commit -am 'Added Json support.'
+ 3439  git co -b igl-both-mac-win
+ 3445  git rm -rf Droplet3d-Console-Mac
+ 3457  git restore  ../../../../grids/cap.*
+ 3458  git restore  ../../../../grids/cap.geo
+ 3459  git restore  ../../../../grids/cap.msh
+ 3461  git co igl-both-mac-win
+ 3477  git add MacSrc/
+ 3481  git co -b igl-integrated-version
+ 3482  git add CMakeLists.txt Droplet3d-Console/MacSrc/main.cpp
+ 3483  git add Droplet3d-Console/MeshHandler/MeshHandler.*
+ 3484  git add cmake/
+ 3485  git commit -am 'Copy over from igl version.'
+ 3486  git rebase origin/reparametrization
+ 3495  git add  ../Droplet3d-Console/MacSrc/
+ 3496  git add ../Droplet3d-Console/MeshHandler/
+ 3497  git commit -m 
+ 3498  git commit -m "Added Array2"
+ 3499  git push -f origin igl-integrated-version
+ 3500  git co igl-local-mac
+ 3502  git co igl-integrated-version
+ 3504  git add grids/
+ 3505  git rm  grids/cap.stl
+ 3506  git rm -f grids/cap.stl
+ 3507  git commit -m 'Added grid files.\n\n'
+ 3508  git add   Droplet3d-Console/MacSrc/Utils/Array2.h
+ 3509  git commit -m 'Replace alglib with tangents.'
+ 3510  git push --set-upstream origin igl-integrated-version
+ 3511  git commit -am 'Use dirty copy of substrate.'
+ 3513  git rm igl_version
+ 3515  git commit -am 'Integrate substrate height and normal.\n\n'
+ 3516  git push origin igl-integrated-version
+ 3532  git commit -am 'Debugging.'t
+ 3533  git commit -am 'Debugging.'
+ 3534  git add ../plot_data.ipynb
+ 3535  git commit -am 'Added utility to generate vtk.'
+ 3536  git commit -am 'Pad numbers.'
+ 3538  git commit -am 'cleanup.\n\n'
+ 3551  git add ../Droplet3d-Console/MeshHandler/MeshHandler.cpp
+ 3552  git rm ../plot_data.ipynb
+ 3553  git rm -f ../plot_data.ipynb
+ 3560  git add export_vtk.py
+ 3561  git commit -am 'Working on substrate.'
+ 3565  git commit -am 'Algorithm.'
+ 3566  git commit -am 'L2.'
+ 3576  git remote add origin git@github.com:luca-heltai/luca-heltai.github.io.git
+ 3577  git commit -m 'Initial page.'
+ 3579  git clone https://github.com/luca-heltai
+ 3580  git clone https://github.com/luca-heltai/luca-heltai.github.io
+ 3581  git clone git@github.com:luca-heltai/luca-heltai.github.io.git
+ 3583  git submodule add -h
+ 3603  git submodule add 
+ 3606  cd git_repo
+ 3607  git submodule add -b release/9.6.1 git@github.com:dealii/dealii.git libraries/dealii                              \n git submodule update --init --recursive                                                                           \n cd libraries/dealii                                                                                               \n git checkout 562bf3b                                                                                              \n cd -                                                                                                              \n git add libraries/dealii                                                                                          \n git commit -m "Add Deal.II library as a submodule version 9.6.1 (562bf3b)"        
+ 3608  git submodule add git@github.com:psctoolkit/psctoolkit.git libraries/psctoolkit       
+ 3609  cd libraries/psctoolkit                                                                                        \n    git checkout 883a428                                                                                           \n    cd -       
+ 3612  git submodule add git@gitlab.com:lifex/lifex.git applications/heart/lifex 
+ 3613  cd applications/heart/lifex                                                                                    \n    git checkout 1ad05e299ee3e3d13cd88557b67d3617363b6c1f                                                          \n    cd -   
+ 3614  cd libraries/dealii                                                                                            \n    git checkout 562bf3b                                                                                           \n    cd -
+ 3615  cat .gitmodules
+ 3617  git submodule add -b release/9.6.1 git@github.com:dealii/dealii.git libraries/dealii    \n    git checkout 562bf3b                                                                                           \n    cd -
+ 3618  git submodule add -b release/9.6.1 git@github.com:dealii/dealii.git libraries/dealii                     
+ 3620  git rm dealii
+ 3621  vi .gitmodules
+ 3622  git add .gitmodules
+ 3623  git restore --staged dealii 
+ 3624  git restore dealii 
+ 3625  git submodule update --init --recursive 
+ 3626  git add libraries/dealii                                                                                       \n    git commit -m "Add Deal.II library as a submodule version 9.6.1 (562bf3b)"     
+ 3627  git commit -m 'gitignore.'
+ 3631  git submodule add git@github.com:fdrmrc/Polydeal.git polygonal
+ 3633  git checkout cbe36e6
+ 3634  git add polygonal
+ 3635  git commit -m 'Added PolyDeal'
+ 3636  git remote set-url origin git@github.com:dealii-X/dealii-X.git
+ 3637  mv git_repo dealii-X
+ 3639  git submodule add git@github.com:luca-heltai/reduced_lagrange_multipliers.git
+ 3640  git commit -m 'Added liver prototype application.'
+ 3646  git add ~/Contratti/AdditiveFlow/.clang-format
+ 3647  git add  ../../../../.clang-format
+ 3648  git add  MacSrc/Array2.Utils.h
+ 3649  git add   MeshHandler/MeshHandler.cpp
+ 3650  git mv Array2.Utils.h Utils
+ 3655  git rm -r main.cpp Utils/
+ 3656  git rm Util
+ 3657  git rm Utils
+ 3658  git rm -rfUtils
+ 3659  git rm -rf Utils
+ 3664  git status .
+ 3668  git rm main.cpp
+ 3670  git add main.cpp
+ 3671  git remote set-url origin https://git@git.overleaf.com/6575879caa10e41bfd758222
+ 3673  git add chapters/validation.tex  replies/response_to_reviewers.tex
+ 3674  git commit -m 'Responses.'
+ 3676  cat ~/Contratti/AdditiveFlow/.gitignore
+ 3677  code ~/Contratti/AdditiveFlow/.gitignore
+ 3679  git diff ../Droplet3d-Console/Utils/Array2.Utils.h --ignore-all-space
+ 3680  git diff --ignore-all-space ../Droplet3d-Console/Utils/Array2.Utils.h 
+ 3681  git diff --ignore-space-change ../Droplet3d-Console/Utils/Array2.Utils.h 
+ 3682  git diff --ignore-blank-lines --ignore-all-space ../Droplet3d-Console/Utils/Array2.Utils.h
+ 3683  git diff --ignore-blank-lines --ignore-all-space --ignore-space-change ../Droplet3d-Console/Utils/Array2.Utils.h
+ 3684  git commit -m 'indent/ignore/and other clang style files.'
+ 3688  git revert ../../../temp/build/deps/
+ 3689  git restore  ../../../temp/build/deps/
+ 3690  git add  ../Droplet3d-Console/MacSrc/Utils/Array2.Utils.h
+ 3691  git commit -am 'Make files compile again in local'
+ 3692  caat ../.gitignore
+ 3693  cat ../.gitignore
+ 3694  rm ../.gitignore
+ 3718  git add ../Droplet3d-Console/gtests/
+ 3719  git commit -am 'Added gtest to CMakeLists.txt'
+ 3721  git commit -am 'Fixed volume computation.'
+ 3722  git co -b igl-cgal-intersection
+ 3726  git add    ../grids/cap_closed.geo
+ 3728  git add ../grids/cap*
+ 3730  git add  ../grids/cap_closed.msh
+ 3731  git commit -m 'Add closed version of cap.msh'
+ 3742  git add ../export_vtk.py
+ 3744  git commit -am 'Add support for closed volumes. Constraints non-working.'
+ 3745  git commit -am 'Add test for constraints.'
+ 3746  git push --set-upstream origin igl-cgal-intersection
+ 3772  git commit -am 'Minor changes'
+ 3812  git diff 739c0c8
+ 3822  git add fig/* data/* main_clean.tex
+ 3823  git add mplainnat.bst
+ 3824  git commit -m 'Before changes.'
+ 3827  git commit -m 'Renamed all files.'
+ 3829  git restore main_clean.tex
+ 3832  git add all_figures.pdf
+ 3833  git add edit.ipynb
+ 3834  git add response_to_reviewers.pdf
+ 3835  git add main_with_diff.pdf
+ 3838  git rm data fig
+ 3839  git rm -r data fig
+ 3840  git commit -m 'Move all images to single pdf.'
+ 3841  git st. 
+ 3851  git init .. 
+ 3859  git st ..
+ 3877  git add TICKERS.md python/
+ 3878  git rm -rf python/.ipynb_checkpoints/
+ 3879  git add 2024/
+ 3880  git commit -m 'Expenses clear.'
+ 3881  git add python/expenses.ipynb\n\tmodified:   python/portfolio_analys
+ 3882  git hsit
+ 3883  git add python/portfolio_analysis.ipynb
+ 3884  git commit -m 'Portfolio analysis clear.'
+ 3885  git remote add origin git@github.com:luca-heltai/investimenti.git
+ 3886  git add python 
+ 3887  git commit -m 'Plotly.'
+ 3890  git clone https://github.com/werew/inverno.git
+ 3904  git clone https://github.com/afadil/wealthfolio.git\ncd wealthfolio
+ 3911  git clone git@github.com:afadil/wealthfolio.git
+ 3925  git clone git@github.com:gismo/gismo.git
+ 3941  git clone git@github.com:PolvereUnipi/Polverino_PHD_files.git 
+ 3943  git rm phd_log.aux phd_log.bbl phd_log.blg phd_log.pdf phd_log.synctex.gz 
+ 3944  git rm -f phd_log.aux phd_log.bbl phd_log.blg phd_log.pdf phd_log.synctex.gz 
+ 3945  git commit -m 'Removed all temporary files.'
+ 3946  git commit -am 'Split tests.'
+ 3954  git clone git@github.com:fizban99/pp-portfolio-classifier.git
+ 3963  wget https://raw.githubusercontent.com/OctoPrint/octoprint-docker/refs/heads/master/docker-compose.yml
+ 3979  git co lorthois
+ 3981  git commit -am 'Fix compilation on mac.'
+ 3982  git pull --rebase origin/lorthois
+ 3983  git pull --rebase origin lorthois
+ 4009  git st data
+ 4022  git add ../data/lorthois/generate_vtk.py
+ 4023  git add -f  ../data/lorthois/generate_vtk.py
+ 4024  git add -f  ../data/lorthois/generate_input_files.py
+ 4025  git diff  ../include/inclusions.h
+ 4026  git commit -am 'Added python to generate input files.'
+ 4066  git commit -am 'RM ME after debugging.'
+ 4067  git push origin lorthois
+ 4068  git pull origin lorthois
+ 4098  git co develop
+ 4099  git pull origin develop
+ 4101  git co -b dealii-v9.6.1
+ 4102  git add  var/spack/repos/builtin/packages/dealii/package.py
+ 4103  git commit -m 'Added dealii version 9.6.1 and 9.6.2'
+ 4104  git push heltai dealii-v9.6.1
+ 4129  git add source/pdes/interface_lagrange_multipliers.cc 
+ 4130  git add source/finite_element_collection.cc source/pdes/nitsche_interface_poisson.cc\n 
+ 4131  git add \tinclude/pdes/nitsche_interface_poisson.h \tinclude/pdes/interface_lagrange_multipliers.h\n \tinclude/parsed_tools/finite_element_collection.h 
+ 4132  git add \tbook_prms/chapter_2_example_3_4_nitsche_interface_poisson.prm
+ 4133  git add \tinclude/parsed_tools/finite_element_collection.h\n
+ 4134  git commit -am 'Some more book tests.'
+ 4148  git add Dockerfile
+ 4166  git submodule add https://github.com/BRAINIACS-Group/ExaBrain 
+ 4168  vi ../.gitmodules
+ 4170  git submodule add git@github.com:exadg/exadg.git
+ 4171  git commit -am 'Added brain and lung solvers.'
+ 4212  git co -b restructure
+ 4213  git co -b solid-mechanics
+ 4214  git diff   content/03_continuum_mechanics.tex
+ 4215  git add  content/03_continuum_mechanics.tex\n
+ 4216  git commit -m 'Start linear elasticity.'
+ 4217  git push origin solid-mechanics
+ 4218  git co restructure
+ 4219  git add content/03_continuum_mechanics.tex
+ 4220  git commit -m 'Added energy part to cont mech.'
+ 4221  git rm content/04_variational.tex
+ 4222  git mv content/01_preliminaries.tex 01_functional_spaces.tex
+ 4223  git mv 01_functional_spaces.tex content
+ 4224  git mv content/03_continuum_mechanics.tex content/02_continuum_mechanics.tex
+ 4225  git mv content/02_pdes.tex content/03_pdes.tex
+ 4226  git mv content/03_bvp_with_interfaces.tex content/04_bvp_with_interfaces.tex
+ 4227  git add  main.tex main_clean.tex
+ 4228  git add  main_clean.tex
+ 4229  git add content/01_functional_spaces.tex
+ 4230  git commit -m 'Change title.'
+ 4231  git commit --amend 'Restructure.'
+ 4232  git commit --amend -m 'Restructure.'
+ 4235  git add 06_non_matching_coupling.tex
+ 4236  git mv 06_fsi_discrete.tex 07_fsi_discrete.tex
+ 4237  git mv 07_other_fsi.tex 08_other_fsi.tex
+ 4238  git add  01_functional_spaces.tex
+ 4239  git add 05_fsi.tex
+ 4240  git commit -m 'New chapter.'
+ 4241  git push origin restructure
+ 4242  git commit -am 'Work on elasticity.'
+ 4243  git co -b linear-elasticity
+ 4244  git commit -am 'Work on lin elast.'
+ 4245  git push origin linear-elasticity
+ 4246  git push  --set-upstream origin linear-elasticity\n
+ 4251  git add  content/02_continuum_mechanics.tex
+ 4252  git add figures/chapter_2_solid_mechanics.pdf
+ 4253  git commit -am 'Solid.'
+ 4254  git commit -am 'minimal.'
+ 4255  git commit -am 'update picture.'
+ 4295  git add  figures/chapter_5_fsi.pdf
+ 4296  git add figures/chapter_5_fictitious_domain.pdf
+ 4298  git add  content/05_fsi.tex
+ 4300  git add README.md 
+ 4301  git commit -am 'Added figures, fictitious domain, fsi.'
+ 4304  git commit -am 'Some text in the introduction to FSI.'
+ 4307  cat id_rsa_for_github_lectures.pub
+ 4312  git diff Droplet3d-Console/MeshHandler/MeshHandler.cpp
+ 4313  git add Droplet3d-Console/MeshHandler/MeshHandler.cpp
+ 4314  git commit -m 'Move initialization inside setMesh.'
+ 4315  git add Droplet3d-Console/gtests/droplet_tests_cgal.cpp Droplet3d-Console/MeshHandler/CGAL_Utilities.cpp   Droplet3d-Console/MeshHandler/CGAL_Utilities.h 
+ 4316  git commit -m 'Added utilities to convert to native CGAL format.'
+ 4319  git commit -am 'smalle changes.'
+ 4320  git revert  tesi-luca/chap_1.tex
+ 4321  git restore tesi-luca/chap_1.tex
+ 4322  git diff content/05_fsi.tex
+ 4323  git commit -am 'Theorem.\n'
+ 4325  git co -b elasticity-fixes
+ 4333  git diff content/02_continuum_mechanics.tex
+ 4335  git commit -am 'Fixed warnings and errors.'
+ 4344  git commit -am 'Fixed conversion from cgal to MeshHandler.'
+ 4345  git commit -am 'Remesh after merge.'
+ 4408  git add cap_closed_coarse.*
+ 4411  git commit -am 'Test.'
+ 4413  git co git@github.com:luca-heltai/luca-heltai.github.io.git .
+ 4414  git clone git@github.com:luca-heltai/luca-heltai.github.io.git .
+ 4415  git commit -am 'Main page test.'
+ 4419  gh api \\n      --method POST \\n      -H "Accept: application/vnd.github.v3+json" \\n      /repos/dealii-X/dealii-X/milestones \\n      -f title='Demo'\n    -f state='open'\n    -f description='Dumb milestone for demo purpose'\n    -f due_on='2025-02-28T23:39:01Z'
+ 4431  git add *csv 
+ 4432  git add deliverables.py labels.py milestones.py 
+ 4433  git co -b milestones
+ 4434  git push origin milestones
+ 4435  mv ~/dealii/dealii-X.github.io .
+ 4436  cd dealii-X.github.io
+ 4446  git rm author/luca/feed/index.xml  author/luca/index.html category/uncategorized/feed/index.xml category/uncategorized/index.html comments/feed/index.xml feed/index.html feed/index.xml\n
+ 4447  git rm hello-world/feed/index.xml hello-world/index.html research/index.html sample-page/feed/index.xml sample-page/index.html wp-admin/index.html 
+ 4448  git commit -m 'New version of the site.'
+ 4449  git commit -am 'Update page.'
+ 4450  git add * 
+ 4451  git commit -am 'Research page.'
+ 4454  git commit -m 'Fixed research.'
+ 4462  git commit -am 'Publications.'
+ 4463  git clone https://git@git.overleaf.com/6797ca8ac3f78feee2c10ef2 2025_al_ibm
+ 4464  git commit -am 'Fix Home.'
+ 4469  git co -b fix-doc-step-34
+ 4473  git diff  doc/intro.dox
+ 4474  git add doc/intro.dox
+ 4475  git diff  ../../doc/doxygen/references.bib
+ 4476  git commit -am 'Fix exact solution step-34.'
+ 4477  git push heltai fix-doc-step-34
+ 4480  git co -b 'fix-lh'
+ 4481  git commit -am 'Fix LH info.'
+ 4482  git remote add heltai git@github.com:luca-heltai/dealii-website.git
+ 4483  git push heltai fix-lh
+ 4484  git push -f heltai fix-lh
+ 4485  git co -b mac-package
+ 4486  git commit -m 'Update mac link.'
+ 4487  git restore docs/current_release/download.md
+ 4488  git wdiff
+ 4489  git add docs/current_release/download.md
+ 4490  git commit -am 'Fix typo.'
+ 4491  git push heltai mac-package
+ 4494  git commit -am 'Added news.'
+ 4507  git co -b AY_2024_2025
+ 4508  git diff Makefile
+ 4509  git diff matlabcodes/laboratorio11/expliciteulertest.m
+ 4527  git s t
+ 4529  git mv src src_future
+ 4532  git mv src_future/* src
+ 4534  git mv src/src/* src_future
+ 4536  git mv src/src src_future
+ 4537  git mv src_future/intro.md src
+ 4538  git mv src_future/laboratorio1.md src
+ 4539  git mv laboratorio1.md laboratorio_01.md
+ 4540  git mv ../src_future/*yml .
+ 4541  git mv ../src_future/images .
+ 4546  git add SCHEDULE.md
+ 4547  git commit -m "Start of AY 2024/2025."
+ 4548  git tag 9de51214a1d24b00dd78d3ff377e301c422c30f4 AY_2023_2024
+ 4551  git mv src_future src 
+ 4552  git mv src/src_future/* src
+ 4554  git push --tags 
+ 4555  git help tag
+ 4556  git tag -d 9de51214a1d24b00dd78d3ff377e301c422c30f4
+ 4557  git tag AY_2023_2024 9de51214a1d24b00dd78d3ff377e301c422c30f4
+ 4558  git add src/_config.yml
+ 4559  git push -f
+ 4560  git commit -m 'Update calcolo numerico.'
+ 4575  git remote add orgin git@github.com:luca-heltai/calcolo-numerico-docenti.git
+ 4579  git add assets beamerthemedmpisa.sty cheby1.pdf dmpisacolor.sty lab-link.png lorenz.png matlab_logo.jpeg slides.tex
+ 4584  git add beamerthemedmpisa.sty slides.tex
+ 4585  git commit -m 'Presentazione corso.'
+ 4586  git push --set-upstream origin main
+ 4587  git remote set-url origin git@github.com:luca-heltai/calcolo-numerico-docenti.git
+ 4588  git remote rm orgin
+ 4589  git remote add origin git@github.com:luca-heltai/calcolo-numerico-docenti.git
+ 4611  git co -b cleanup
+ 4612  git add Makefile 
+ 4613  git add dependencies/Dockerfile
+ 4627  git push heltai cleanup w
+ 4628  git push heltai cleanup 
+ 4629  git push heltai cleanup
+ 4652  git push origin igl-cgal-intersection
+ 4654  git push origin cleanup
+ 4686  git commit -m 'Lab 2.'
+ 4687  git commit -m 'Updated.'
+ 4689  git commit -m 'Update.'
+ 4692  git reset HEAD~1
+ 4693  git co -b mold
+ 4694  git push heltai mold 
+ 4695  git co mold
+ 4703  git commit -am 'Try lld.'
+ 4707  git add 02\ -\ LAB\ -\ introduction.pdf
+ 4709  git ls-files --deleted -z . | xargs -0 git rm
+ 4710  git commit -m 'Update slides to le2024-2025.'
+ 4711  git tag AY_2023_2024 fd97953
+ 4712  git tag 
+ 4713  git tag -l
+ 4735  git co -b psctoolkit
+ 4736  git co origin/development
+ 4739  git status . 
+ 4740  git sthas
+ 4741  git restore psblas3
+ 4742  git submodule -h
+ 4743  git co v3.9.0-rc1
+ 4744  git co a082cdb1b648fa62de48781815e7090ae9c777a9
+ 4756  git diff  ../include/deal.II/base/config.h.in
+ 4757  git restore ../include/deal.II/base/config.h.in   
+ 4763  mv find_psblas.with_mpirun=2.output find_psblas.mpirun=2.outputgit st
+ 4764  git add  ../../include/deal.II/base/config.h.in
+ 4769  git add find_psblas.cc
+ 4770  git commit -m 'Added psblas.'
+ 4800  git add ../cmake/modules/FindDEAL_II_PSBLAS.cmake  ../tests/psblas/find_psblas.cc  ../tests/psblas/find_psblas.mpirun=2.output
+ 4805  git add  ../cmake/modules/FindDEAL_II_PSBLAS.cmake 
+ 4806  git add  psblas/find_psblas.cc
+ 4807  git add  psblas/find_psblas.mpirun=2.output
+ 4810  git commit -am 'lld and not mold.'
+ 4812  cd ../.github
+ 4814  git commit -am 'Build on different runners.'
+ 4815  git commit -am 'Fix.'
+ 4816  git push heltai mold
+ 4817  git pull heltai mold
+ 4818  git push origin mold
+ 4819  git push -f origin mold
+ 4820  git push -f heltai mold
+ 4821  git co -b actions
+ 4822  git push origin actions 
+ 4823  git commit -am 'Fix yaml.\n'
+ 4824  git commit -am 'Fix yaml.'
+ 4825  git push origin actions
+ 4826  git push heltai actions
+ 4827  git co -b actions-v2
+ 4828  git commit -am 'Fix tag.'
+ 4829  git push heltai actions-v2
+ 4830  git push origin actions-v2
+ 4832  git co actions-v2
+ 4833  git push --tags
+ 4834  git push -D --tags
+ 4835  git co -b fix-yaml
+ 4836  git pull origin
+ 4837  git co fix-yaml-v3
+ 4838  git co -b fix-yaml-v3
+ 4839  git commit -am 'Add v to v9.6.0'
+ 4841  git commit -m 'Makefile consistent with actions.'
+ 4842  git push heltai fix-yaml-v3
+ 4843  git push origin fix-yaml-v3
+ 4850  git clone https://github.com/2listic/dealii-X_D2.6
+ 4864  git log -S mumps
+ 4865  git show 52e4efae9e3ae31c9b2884ce9b2da5d016b69471
+ 4866  git commit -m 'Added lab3.'
+ 4879  git add psblas.html
+ 4882  git add ../doc/news/changes/major/20250312LucaHeltai
+ 4884  git co -b docker-refactor
+ 4886  git clone git@github.com:ste-dtst/nmpde-notes.git
+ 4891  git commit -m 'Aider.'
+ 4892  git filter-branch --index-filter "git rm --cached --ignore-unmatch Files/main.pdf" --tag-name-filter cat --all  
+ 4893  git filter-branch --force --index-filter "git rm --cached --ignore-unmatch main.pdf" --prune-empty --tag-name-filter cat -- --all
+ 4894  git remote add heltai git@github.com:luca-heltai/nmpde-notes.git
+ 4897  mkdir .github/workflows
+ 4898  mkdir -p .github/workflows
+ 4900  mv Files/aa.yaml .github/workflows/compile_latex.yml
+ 4901  /add .github/workflows/compile_latex.yml
+ 4902  git commit -am '/drop Files/aa.yaml
+ 4903  git add  ../cmake/configure/configure_50_psblas.cmake
+ 4904  git add external-libs/psblas.html news/changes/major/20250312LucaHeltai  readme.html  ../tests/psblas/find_psblas.cc
+ 4905  git commit -am 'newlines'
+ 4906  git push heltai psctoolkit
+ 4907  git diff  .gitignore\n
+ 4908  git commit -am 'Some small changes.'
+ 4909  git push origin elasticity-fixes
+ 4910  git add .gitignore\n
+ 4911  git co -b non-matching-coupling-bis
+ 4916  git add figures/non_matching_projection.pdf
+ 4917  git add ref.bib
+ 4921  git add content/06_non_matching_coupling.tex
+ 4922  git add figures/non_matching_projection_inexact.pdf
+ 4923  git commit -m 'Revert gitignore.'
+ 4931  ls git-hooks
+ 4939  git mv Files files
+ 4940  git mv Files ff
+ 4941  git mv ff files
+ 4942  git add figures/
+ 4943  git add files/0-title-page.tex
+ 4947  git add definitions.sty
+ 4949  git add figures/domain.pdf
+ 4950  git commit -am 'Sobolev notations.'
+ 4951  git commit -am 'Fix some style.'
+ 4953  git push -f heltai psctoolkit
+ 4954  git add figures/triangle_scales.pdf
+ 4955  git add figures/affine_mapping.pdf
+ 4956  git commit -m 'Figures and fixes.'
+ 4957  git add files/2-error-estimates-lax-milgram.tex
+ 4958  git commit -m '.gitignore and ref to fig.'
+ 4959  git push heltai docker-refactor
+ 4960  git pull heltai docker-refactor
+ 4961  git add .github/workflows/docker.yml
+ 4962  git push -f heltai docker-refactor
+ 4982  git co -b mumps
+ 4988  git revert 687071c2fe38f53d05be476118eff590675a8c05e1a5ffeac1b38309c0c28a13
+ 4989  git add ../cmake/
+ 4990  git revert a71171e
+ 4991  git revert --abort
+ 4992  git revert a71171e --no-commit
+ 4993  git restore ../doc/doxygen/options.dox.in
+ 4994  git diff  ../doc/doxygen/options.dox.in 
+ 4995  git restore --staged    ../doc/doxygen/options.dox.in  ../doc/users/config.sample 
+ 4996  git restore --staged    ../doc/doxygen/options.dox.in   ../doc/readme.html ../doc/news/changes.h  ../doc/doxygen/options.dox.in 
+ 4997  git restore ../doc/doxygen/options.dox.in ../doc/users/config.sample 
+ 4998  git restore --staged   ../doc/readme.html
+ 4999  git restore ../doc/readme.html
+ 5000  git restore --staged   ../doc/news/changes.h
+ 5001  git restore ../doc/news/changes.h
+ 5002  git add  ../doc/news/changes.h
+ 5003  git restore --staged  ../doc/news/changes.h 
+ 5022  git remote add origin git@github.com:dealii-X/deliverables.git
+ 5036  git add logos/
+ 5037  git add D2.6/D2.6_project_handbook.tex
+ 5038  git add D2.6_project_handbook.tex
+ 5039  git rm main.tex
+ 5040  cat .git/config
+ 5044  git rm D2.6_project_handbook.tex
+ 5047  git s t.
+ 5048  git add D5.1_project_management_handbook.tex
+ 5052  kgit st 
+ 5055  git add D0.0_template.tex ../deliverable.sty
+ 5056  git commit -m 'First version of template deliverable.'
+ 5061  git add D4.1
+ 5062  git add D4.2
+ 5063  git rm deliverable.sty
+ 5064  git add D0.0_template/
+ 5065  git add D4.*
+ 5066  git add common/deliverable.sty
+ 5068  git commit -am 'Moved to common. Added pdf Deliverables.'
+ 5069  git commit -m 'README.md'
+ 5073  git add README.md new_deliverable.sh
+ 5074  git commit -m 'Script.'
+ 5075  git add D0.0_template/D0.0_template.tex
+ 5076  git commit -am 'Small.'
+ 5078  git co -b D1.2
+ 5082  git clone git@github.com:luca-heltai/sossoldi.git
+ 5085  git add ../doc/external-libs/mumps.html
+ 5086  git commit -m 'Added documentation.'
+ 5087  git revert 25f457d --no-commit
+ 5090  git revert 52e4efa --no-commit
+ 5091  git add ../../source/lac/sparse_direct.cc   ../../include/deal.II/lac/sparse_direct.h 
+ 5093  git commit -am 'Added mumps interface.'
+ 5094  git commit -a --amend 
+ 5095  git commit -am 'RM.'
+ 5096  git add D1.2/D1.2_dealii_report.tex
+ 5097  git commit -m 'Added structure of D1.2 report.'
+ 5103  git push heltai mumps m
+ 5104  git push heltai mumps 
+ 5105  git add doc/external-libs/mumps.html
+ 5106  git commit -am 'Typo.'
+ 5107  git push heltai mumps
+ 5109  git commit -am 'newline'
+ 5110  git reset cf20ac8160
+ 5111  git commit -am 'Lab 4.'
+ 5112  git add include/deal.II/lac/sparse_direct.h 
+ 5113  git commit -m 'Modernize'
+ 5114  git add 04\ -\ LAB\ -\ dealii\ main\ classes.pdf
+ 5115  git commit -m 'Lab 4.'
+ 5117  git push -f heltai mumps
+ 5118  ../dealii/.git/hooks/pre-commit.sample
+ 5119  cat ../dealii/.git/hooks/pre-commit.sample
+ 5129  git co -b D2.6
+ 5131  git br -D D2.6
+ 5133  git clone git@github.com:2listic/dealii-X_D2.6.git
+ 5139  git add figures/p1_basis_1d.pdf
+ 5140  git commit -am 'small changes'
+ 5141  git pull --rebase origin main
+ 5142  git add files/1-overview.tex files/
+ 5143  git git st
+ 5144  git commit -am 'Some small corrections.'
+ 5145  git commit -am 'More small corrections.\n'
+ 5146  git clone https://git@git.overleaf.com/67d9af8d68def7dc40b6f439 2025_al_immersed
+ 5150  git add ../common/bibliography.bib
+ 5151  git commit -m 'First draft of 2 parts.'
+ 5152  cd ~/GitHub/luca-heltai.github.io
+ 5153  git commit -am 'News.'
+ 5157  git add D1.2_dealii_report.tex
+ 5158  git commit -m 'First attempt at PSCTookit.'
+ 5159  git push origin D1.2
+ 5161  git commit -m 'Add link to PR.'
+ 5162  git commit -am 'Add link to PR.'
+ 5163  git push --set-upstream origin D1.2
+ 5164  git commit -am 'MUMPS part.'
+ 5173  git add 06\ -\ LAB\ -\ quadrature\ and\ fevalues.pdf
+ 5174  git commit -m 'Lab 6'
+ 5182  git remote add dualistic git@github.com:2listic/deliverables.git
+ 5183  git co D2.6
+ 5185  git push dualistic D2.6
+ 5186  git commit -m 'Update main.'
+ 5187  git remote add buttari git@github.com:abuttari/dealiix-deliverables.git
+ 5188  git fetch buttari
+ 5189  git co D1.1
+ 5205  git add ball_2.pdf
+ 5206  git commit -am 'Small change.'
+ 5242  git add figures/lagrange_nodal_functions_quads.pdf figures/lagrange_nodal_functions_triangles.pdf
+ 5243  git commit -am 'Basis functions. Lagrange.'
+ 5244  git add    figures/polynomial_conformity.pdf
+ 5245  git add  figures/dpo_example.pdf
+ 5246  git add figures/cg_vs_dg.pdf
+ 5247  gitst 
+ 5248  git add  files/1-overview.tex
+ 5249  git commit -am 'Fix some.'
+ 5250  git commit -am 'Small notation changes.'
+ 5251  git push origin non-matching-coupling-bis
+ 5254  git add 08\ -\ LAB\ -\ poisson.pdf
+ 5255  git commit -am 'Poisson solver.'
+ 5257  git add  src/_toc.yml
+ 5258  git commit -m 'Lab 6 and 7'
+ 5263  git co -b changelog-mumps
+ 5267  git add doc/news/changes/major/20250402LucaHeltai
+ 5268  git commit -m 'Changelog for mumps.'
+ 5269  git push heltai changelog-mumps
+ 5272  git commit -am 'Non working test.'
+ 5283  git co -b cling-script
+ 5293  git push -f heltai main
+ 5294  git commit -am 'Fix minor stuff.'
+ 5295  git co AL_prec 
+ 5306  git co book-tests
+ 5322  git remote add origin git@github.com:luca-heltai/hpspde.git
+ 5328  touch ../../.gitignore
+ 5340  git add ../.devcontainer/
+ 5341  mkdir .github/
+ 5342  mkdir .github/workflows/
+ 5343  touch .github/workflows/gtest.yaml
+ 5344  cat ~/c++/bare-dealii-app/.github/workflows/tests.yml
+ 5345  git add ../.github/
+ 5357  touch output/.gitignore
+ 5358  git add -f .gitignore
+ 5363  git config --list
+ 5364  git clone git@github.com:luca-heltai/hpspde.git
+ 5367  git diff README.md
+ 5368  git branch lecture1
+ 5369  git checkout lecture1
+ 5370  git push origin lecture1
+ 5372  cd github
+ 5379  git branch LH-rev
+ 5381  git commit -am 'LH comments.'
+ 5382  latexdiff-vc --git main.tex -r LH-rev    
+ 5383  latexdiff-vc --git main.tex -r LH-rev  --flatten  
+ 5407  git commit -am 'Ran indent.'
+ 5408  git reset c8dd52c
+ 5413  git push -f origin AL_prec
+ 5415  git commit -am 'Make two d problem run.\n'
+ 5436  git add -f three_cylinders_R0*{gpl,vtk}
+ 5438  git add  ../blender/cylinders.blend
+ 5439  git add ../prms/three_cylinders_3d.prm
+ 5440  git commit -am '3d code runs. no convergence with tol < 1e-2'
+ 5441  git push origin AL_prec
+ 5444  git commit 
+ 5451  git add figures/scott_zhang.pdf figures/scott_zhang_patches.pdf
+ 5453  git add grids/ball.geo
+ 5454  git add files/
+ 5455  git push heltai main
+ 5461  git co -b non-manifold-triangulation
+ 5493  git commit -am 'Small comments'
+ 5494  git commit -am 'Fixed some thingssss.'
+ 5496  git commit -am 'Funds.'
+ 5503  git tags
+ 5504  git tag -list
+ 5505  git tag rev1
+ 5506  git commit -am 'Added two refs. Fixed typo in figure.'
+ 5507  latexdiff-vc --git main.tex -r rev2  --flatten  
+ 5508  git tag --list
+ 5509  latexdiff-vc --git main.tex -r rev1  --flatten  
+ 5518  git diff small_tree.blend
+ 5519  git restore small_tree.blend
+ 5526  git add data/medium_tree_8_3d.gpl
+ 5527  git commit -m 'Medium tree.'
+ 5528  git co -b dealii-inclusions
+ 5530  git add  ../notebooks/mst_generation.ipynb\n
+ 5531  git commit -m 'Notebook.'
+ 5532  git co AL_prec
+ 5533  git cherry-pick 8dc9e7b
+ 5536  git add ../source/reference_inclusion.cc ../include/reference_inclusion.h
+ 5537  git commit -am 'Reference inclusion.'
+ 5538  git add  ../include/reference_inclusion.h
+ 5539  git co parameterEstimarion
+ 5540  git squash -h 
+ 5541  git reset --keep 9f96e39d0e2ac5783bbb156b5278c99e78889d65
+ 5542  git merge-base master  
+ 5543  git merge-base master  parameterEstimarion
+ 5544  git log --no-merges 9f96e39d0e2ac5783bbb156b5278c99e78889d65..parameterEstimarion --reverse
+ 5545  git rebase -i 9f96e39d0e2ac5783bbb156b5278c99e78889d65
+ 5546  git reset --hard origin/parameterEstimarion
+ 5547  git reset --soft origin/master
+ 5548  git commit -m 'Parameter Estimation.'
+ 5549  git diff origin/parameterEstimarion
+ 5550  git push -f origin parameterEstimarion
+ 5572  git add CMakeLists.txt gmsh_partition_01.cc gmsh_partition_01.output
+ 5573  git add tests.h
+ 5574  git co -b gmsh-partitioner
+ 5575  git commit -m 'Initial setup for gmsh tests.'
+ 5576  git push origin gmsh-partitioner
+ 5583  git add */reference_inc*
+ 5584  git pull --rebase origin dealii-inclusions
+ 5585  git push --set-upstream origin dealii-inclusions
+ 5586  git push -f origin dealii-inclusions
+ 5588  git commit -am 'Fixed orthogonality'
+ 5589  git push origin dealii-inclusions
+ 5590  git commit -am 'Doc and small stuff.'
+ 5591  git mv reference_inclusion.cc reference_cross_section.cc
+ 5592  git mv reference_inclusion.h reference_cross_section.h
+ 5594  git add reference_cross_section.cc
+ 5595  git add reference_inclusion.cc
+ 5596  git add ../*/reference_cross*
+ 5598  git add /Users/heltai/c++/reduced_lagrange_multipliers/include/tensor_product_space.h
+ 5599  git add /Users/heltai/c++/reduced_lagrange_multipliers/source/tensor_product_space.cc
+ 5601  git add  ../include/tensor_product_space.h\n
+ 5602  git add -h
+ 5611  git mv reference_cross_section.cc reference_cross_section_01.cc
+ 5613  git mv reference_inclusion.cc reference_inclusion_01.cc
+ 5614  git mv reference_inclusions_basis.cc inclusions_02.cc
+ 5615  git mv reference_inclusion_01.cc inclusions_02.cc
+ 5616  git add   ../include/reduced_poisson.h
+ 5626  git revert  include/fvm/
+ 5627  git revert  include/fvm
+ 5628  git restore include/fvm
+ 5629  git add   include/reduced_poisson.h
+ 5630  git add source/reduced_poisson.cc
+ 5631  git add  include/tensor_product_space.h
+ 5632  git add    source/reference_cross_section.cc
+ 5633  git add source/tensor_product_space.cc
+ 5634  git add  apps/app_reduced_poisson.cc
+ 5635  git restore apps 
+ 5636  git restore include source notebooks
+ 5637  git add include/immersed_repartitioner.h
+ 5638  git add source/immersed_repartitioner.cc
+ 5640  git add  gtests/tensor_product_space_01.cc
+ 5645  git addd  ../include/tensor_product_space.h
+ 5646  git add  ../include/tensor_product_space.h
+ 5648  git add  ../gtests/tensor_product_space_01.cc
+ 5657  git add ..//data/tests/mstree_100.vtk
+ 5658  git add -f ..//data/tests/mstree_100.vtk
+ 5659  git add -f ..//data/tests/mstree_1000.vtk
+ 5660  git add   ../include/particle_coupling.h
+ 5661  git add ../gtests/particle_coupling_01.cc
+ 5662  git add  ../source/particle_coupling.cc
+ 5666  git add  ../../gtests/particle_coupling_01.cc
+ 5667  git add ../../source/tensor_product_space.cc
+ 5668  git co test3D
+ 5670  git commit -am 'Fix CCO output.'
+ 5684  git commit -am 'Update image.'
+ 5685  git add    ../gtests/elasticity_checks.cc
+ 5686  git commit -am 'Fix indent.'
+ 5691  git commit -am 'Fixed issue with failing test.'
+ 5692  git push origin test3D
+ 5693  git co dealii-inclusions
+ 5695  git commit -am 'Try fixing exchange of global indices.'
+ 5696  git commit -am 'Actually test something.'
+ 5701  git diff  ../../source/tensor_product_space.cc
+ 5702  git restore  ../../source/tensor_product_space.cc
+ 5703  git restore   ../../source/tensor_product_space.cc\n
+ 5704  git dif
+ 5705  git commit -am 'Clean rebuild is ok.'
+ 5706  git commit -am 'Implemented coupling matrix.'
+ 5716  git add ../../source/reduced_coupling.cc
+ 5717  git add ../../include/reduced_coupling.h
+ 5718  git add  ../../gtests/reduced_coupling_01.cc
+ 5720  git commit -am 'Moved assemble_coupling* to ReducedCoupling'
+ 5724  git prun
+ 5725  git prune
+ 5726  git commit -am 'Compiling and running. Not converging.'
+ 5734  git commit -am 'Code review with marco.'
+ 5735  git commit -am 'Build test to check matrices.\n'
+ 5744  touch ../data/tests/tests_results/.gitignore
+ 5745  git add ../data/tests/tests_results/.gitignore 
+ 5746  git add -f ../data/tests/tests_results/.gitignore 
+ 5749  git add -f ../data/tests/reduced_poisson_01_one_cylinder.*
+ 5750  git add   ../source/reduced_poisson.cc
+ 5751  git add ../gtests/reduced_poisson_01.cc
+ 5752  git add   ../gtests/reduced_coupling_01.cc
+ 5756  git diff  ../source/tensor_product_space.cc
+ 5757  git commit -m 'Added assertions.'
+ 5762  git commit -m 'Remove one check for the moment.'
+ 5765  git co -b vtk_utilities
+ 5771  git add -f ../data/tests/mstree_10.vtk
+ 5773  git add   ../gtests/vtk_utils_01.cc
+ 5774  git add ../source/vtk_utils.cc ../include/vtk_utils.h
+ 5775  git commit -am 'Added some functions.'
+ 5776  git push origin vtk_utilities
+ 5777  git commit -am 'Added tests.'
+ 5778  git pull --rebase origin vtk_utilities
+ 5779  git push --set-upstream origin vtk_utilities
+ 5788  git commit -am 'fix compilation.'
+ 5795  git add 10\ -\ LAB\ -\ constraints.pdf
+ 5796  git commit -m 'Lab 10.'
+ 5802  git add lab-05b.cc CMakeLists.txt
+ 5803  git add README.md
+ 5804  git commit -m 'Added lab-05b.'
+ 5813  git add convergence_graphs/graph.tex
+ 5814  git commit -m 'Example of convergence graph.'
+ 5828  git mv -f ../data/tests/reduced_poisson_01_one_cylinder.vtk ../data/tests/one_cylinder.vtk
+ 5834  git clone https://github.com/GonzaloMaso/VItA.git
+ 5837  git remote add alt git@github.com:lfmc/VItA.git
+ 5838  git fetch alt
+ 5839  git co alt mas
+ 5840  git co alt master
+ 5841  git co alt/master
+ 5847  git clone git@github.com:SimVascular/svOneDSolver.git
+ 5892  git add abstract.md
+ 5893  git add *sty
+ 5894  git add biblio.bib
+ 5895  git add bold.bst
+ 5897  git add `cat deps.txt `
+ 5899  git add ./biblio.bib\\n    ./bold.bst\\n    assets/background.png\\n    assets/logo_RGB.png\\n    assets/logo_RGB_negative.png\\n    beamerthemedmpisa.sty\\n    dealii-gallery.png\\n    dealii-publications.png\\n    dmpisacolor.sty\\n    figures/bounding_boxes_parallel_alpha.png\\n    figures/coupled-simple.pdf\\n    figures/dealii-x-logo-small.png\\n    figures/efficiency.png\\n    figures/error_inclusion_size_h1.pdf\\n    figures/error_inclusion_size_l2.pdf\\n    figures/europe-dealii-x.png\\n    figures/immediate.pdf\\n    figures/iteration_count.png\\n    figures/medium_tree_one_coeff.png\\n    figures/medium_tree_three_coeff.png\\n    figures/non-matching_parallel_4.png\\n    figures/plus-one-minus-one-half.pdf\\n    figures/reduction.pdf\\n    figures/scalability.png\\n    figures/slender_ball.pdf\\n    figures/solid-to-particles.pdf\\n    figures/spectral_properties.png\\n    figures/stokes.png\\n    figures/stokes_iterations.png\\n    figures/three_cylinders_R005_N1.png\\n    figures/three_cylinders_R005_N3.png\\n    figures/three_cylinders_R01_N1.png\\n    figures/three_cylinders_R01_N3.png\\n    figures/three_cylinders_R02_N1.png\\n    figures/three_cylinders_R02_N3.png\\n    figures/two-inclusions-average.png\\n    figures/two-inclusions-small-average.png\\n    figures/two-inclusions-small.png\\n    figures/two-inclusions-smallest-average.png\\n    figures/two-inclusions-smallest.png\\n    figures/two-inclusions.png\\n    figures/vessel-3d-B.pdf\\n    heltai.tex\\n    my-movie.sty\\n    symbols-private.sty
+ 5900  git commit -m 'First version.'
+ 5901  git remote add origin git@github.com:luca-heltai/presentation_2025_05_07_polimi.git
+ 5902  git push --set-upstream origin main\n
+ 5903  git diff a882150
+ 5963  git clone https://github.com/lukeolson/imperial-multigrid.git
+ 5976  git add figures/corner-tree-avgp.pdf
+ 5978  git add figures/corner-tree-singular.pdf
+ 5980  git add figures/corner_tree_*
+ 5981  git add assets/background.png\\n    assets/logo_RGB.png\\n    assets/logo_RGB_negative.png\\n    beamerthemedmpisa.sty\\n    dealii-gallery.png\\n    dealii-publications.png\\n    dmpisacolor.sty\\n    figures/MPI_matching.pdf\\n    figures/bounding_boxes_parallel_alpha.png\\n    figures/coupled-simple.pdf\\n    figures/dealii-x-logo-small.png\\n    figures/efficiency.png\\n    figures/error_inclusion_size_h1.pdf\\n    figures/error_inclusion_size_l2.pdf\\n    figures/europe-dealii-x.png\\n    figures/immediate.pdf\\n    figures/iteration_count.png\\n    figures/medium_tree_one_coeff.png\\n    figures/medium_tree_three_coeff.png\\n    figures/non-matching_parallel_4.png\\n    figures/plus-one-minus-one-half.pdf\\n    figures/reduction.pdf\\n    figures/scalability.png\\n    figures/slender_ball.pdf\\n    figures/solid-to-particles.pdf\\n    figures/spectral_properties.png\\n    figures/stokes.png\\n    figures/stokes_iterations.png\\n    figures/three_cylinders_R005_N1.png\\n    figures/three_cylinders_R005_N3.png\\n    figures/three_cylinders_R01_N1.png\\n    figures/three_cylinders_R01_N3.png\\n    figures/three_cylinders_R02_N1.png\\n    figures/three_cylinders_R02_N3.png\\n    figures/two-inclusions-average.png\\n    figures/two-inclusions-small-average.png\\n    figures/two-inclusions-small.png\\n    figures/two-inclusions-smallest-average.png\\n    figures/two-inclusions-smallest.png\\n    figures/two-inclusions.png\\n    figures/vessel-3d-B.pdf\\n    heltai.tex\\n    my-movie.sty\\n    symbols-private.sty
+ 5982  git add heltai.toc
+ 5983  git rm heltai.toc
+ 5984  git rm -f heltai.toc
+ 5985  git add heltai.tex
+ 5986  git commit -am 'Presented in milan.'
+ 5993  git rebse --abort
+ 5994  git co -b testbench
+ 6002  git add ../gtests/two_level.cc
+ 6003  git commit -m 'Added two level.cc'
+ 6004  git remote add heltai git@github.com:luca-heltai/hpspde.git 
+ 6005  git remote v-
+ 6006  git add  ../source/test_bench.cc
+ 6007  git add   ../prms/01_eigenvalues.prm
+ 6008  git commit -m 'Fixed test.'
+ 6009  git push origin testbench
+ 6025  git add ../data/tests/reduced_poisson_01_one_cylinder.prm
+ 6026  git add -f ../data/tests/reduced_poisson_01_one_cylinder.prm
+ 6027  git restore ../notebooks/mst_generation.ipynb
+ 6028  git restore --staged ../notebooks/mst_generation.ipynb
+ 6029  git co -b fix-test
+ 6030  git pull --rebase 
+ 6031  git pull --rebase origin master
+ 6060  git add -f data/tests/reduced_poisson_01_one_cylinder_p1.prm
+ 6061  git add -f data/tests/reduced_poisson_01_one_cylinder.prm
+ 6063  git push origin fix-test
+ 6064  git reset --hard origin/vtk_utilities
+ 6065  git push origin vtk_utilities 
+ 6066  git co -b radius
+ 6067  git reset --hard radius
+ 6068  git push -f origin vtk_utilities
+ 6069  git co radius
+ 6072  git add  ../source/vtk_utils.cc
+ 6073  git commit -am 'Fixed indices.'
+ 6074  git upsh 
+ 6077  git add lab-05d.cc
+ 6081  git diff lab-05d.cc
+ 6084  git push --set-upstream origin radius
+ 6098  git add ../include/test_bench.h  ../gtests/two_level_01.cc   ../prms/smoother.prm
+ 6099  git commit -am 'Added Poisson.'
+ 6100  git push --set-upstream origin testbench
+ 6104  git commit -am 'Working smoothing step.'
+ 6105  git remotee
+ 6106  git remote add upstream git@github.com:luca-heltai/hpspde.git 
+ 6107  git pull upstream main
+ 6108  git checkout -b smoother-luca
+ 6109  git branch -D testbench
+ 6114  git add -f simple_1d_grid.vtk simple_vtk.py
+ 6117  git commit -am 'Test read data.'
+ 6119  git commit -am 'Cleanup.'
+ 6149  git add -f ../data/tests/mstree_1000
+ 6150  git add -f ../data/tests/mstree_1000_2.vtk
+ 6151  git add  ../data/tests/simple_vtk.py
+ 6152  git add -f  ../data/tests/simple_vtk.py
+ 6153  git add -f  ../data/tests/simple_1d_grid.vtk
+ 6162  git add -f ../data/tests/one_cylinder_properties.vtk        
+ 6170  git add -u
+ 6174  git add reduced_poisson_01_one_cylinder.pvsm
+ 6175  git add -f reduced_poisson_01_one_cylinder.pvsm
+ 6182  git st ../data/tests/
+ 6183  git status -h
+ 6186  vi ~/.ssh/github-local-actions-token.key
+ 6187  git add  ../notebooks/mst_generation.py
+ 6188  git add  ../source/tensor_product_space.cc
+ 6189  git commit -m 'Fix compilation.'
+ 6190  git push origin radius
+ 6191  git co vtk_utilities
+ 6192  git pull origin vtk_utilities
+ 6193  git st --ignored  ../data/tests/
+ 6205  git add lab-05e.cc CMakeLists.txt
+ 6206  git commit -m 'Lab 05e: Stokes.'
+ 6208  git add stokes_2d.prm
+ 6209  git commit -m 'Param.'
+ 6217  git remote add polvere git@github.com:PolvereUnipi/dealii.git
+ 6223  git co -b coupled-poisson
+ 6241  git clone git@github.com:ste-dtst/dimensionality-reduction-thesis.git
+ 6260  git push polvere pr/fdrmrc/18497
+ 6261  git push polvere PolvereUnipi:MPI_support
+ 6262  git push polvere HEAD
+ 6263  git fetch polvere
+ 6264  git push polvere MPI_support
+ 6265  git remove -v
+ 6266  git co MPI_support
+ 6267  git reset --hard pr/fdrmrc/18497
+ 6268  git br -D pr/fdrmrc/18497
+ 6269  git add ../include/deal.II/lac/sparse_direct.h
+ 6270  git push -f polvere MPI_support
+ 6307  git co -b blood_flow_1d
+ 6308  git add include/blood_flow_1d.h
+ 6309  git add source/blood_flow_1d.cc
+ 6310  git add -f data/aortic_bifurcation.vtk
+ 6311  git add convert_net_to_vtk.py
+ 6312  git add apps/app_blood_flow_1d.cc
+ 6314  git add prms/blood_flow_parameters.prm
+ 6315  git commit -am 'Implement 1d blood flow.'
+ 6316  git restore --staged .github/workflows/tests.yml
+ 6321  git reset --hard origin/blood_flow_1d
+ 6322  git reflog
+ 6323  git reset --hard 5cbe7ba
+ 6324  git reset --soft HEAD~1
+ 6325  git commit -m 'Added 1d implementation of blood flow solver.'
+ 6337  git add   ../source/blood_flow_1d.cc
+ 6338  git push -f origin blood_flow_1d
+ 6350  git push --set-upstream origin blood_flow_1d
+ 6365  git clone git@github.com:luca-heltai/gmsh-dealii-interface.git
+ 6366  git co -b plan 
+ 6368  git add PLAN.md
+ 6373  git add test_grid_1.*
+ 6385  git add load_grid_01.cc load_grid_01.output
+ 6386  git add  ../PLAN.md  ../CMakeLists.txt
+ 6387  git commit -m 'Added simple test that uses current gmsh api.'
+ 6395  git add  ../include/gmsh_api.h
+ 6396  git add ../tests/load_grid_01.*
+ 6397  git commit -m 'Removed absolute path. Added gmsh api function.'
+ 6398  git push origin plan
+ 6415  git tag submission ff292a6
+ 6417  git add reply.tex 
+ 6418  git commit -m 'reply'
+ 6422  git commit -m 'Added replies.'
+ 6433  git init . 
+ 6445  wget https://raw.githubusercontent.com/IQAndreas/markdown-licenses/refs/heads/master/mit.md
+ 6448  git add .vscodeignore LICENCE.md README.md  src/  tsconfig.json 
+ 6449  git add   package.json
+ 6450  cd /Users/heltai/remarkable/remarkable-vscode-plugin && git status
+ 6451  git add .vscode/tasks.json .vscode/launch.json
+ 6452  git commit -am'First version of reMarkable plugin for VSCode.'
+ 6453  git remote add origin git@github.com:luca-heltai/vscode-remarkable-manager.git
+ 6454  git push origin main
+ 6455  cat .gitignore
+ 6456  git commit -m'Added git ignore.'
+ 6460  git add src/extension.ts src/remarkableExplorer.ts .vscode/settings.json
+ 6463  wget https://raw.githubusercontent.com/reHackable/maxio/refs/heads/master/tools/rM2svg
+ 6485  git co test
+ 6486  git co remotes/origin/tests
+ 6487  git br tests
+ 6489  git pull  --set-upstream origin tests
+ 6505  git push origin blood_flow_1d
+ 6532  git restore grids/
+ 6533  git s
+ 6534  git restore grids/New_Meshes/
+ 6535  git restore grids/new_meshes/test_grid_2_
+ 6536  git restore grids/new_meshes/test_grid_2_*
+ 6537  git restore grids/new_meshes/test_grid_2_0.msh grids/new_meshes/test_grid_2_1.msh grids/new_meshes/test_grid_2_2.msh grids/new_meshes/test_grid_2_3.msh grids/new_meshes/test_grid_2_merged.msh 
+ 6538  git pull origin tests
+ 6539  git restore grids/New_Meshes/test_grid_2_1.msh
+ 6540  git restore grids/New_Meshes/test_grid_2_2.msh
+ 6541  git restore grids/new_meshes/test_grid_2_1.msh
+ 6542  git restore grids/new_meshes/test_grid_2_2.msh 
+ 6544  git restore New_Meshes/
+ 6546  git clone \tgit@github.com:luca-heltai/gmsh-dealii-interface.git 
+ 6547  git co tests
+ 6548  git co origin/tests
+ 6549  git rm -r -- grids/New_Meshes/
+ 6550  git rm --cached -r -- grids/New_Meshes/
+ 6551  git add grids/new_meshes/*
+ 6553  git rm grids/New_Meshes
+ 6554  git rm -rf grids/New_Meshes
+ 6555  git co testsss
+ 6556  git co -b testsss
+ 6557  git commit -m 'Removed capital letters.'
+ 6558  git push origin tests
+ 6559  git push --set-upstream origin tests
+ 6560  git push --set-upstream origin remotes/origin/teststests
+ 6562  git co parallel-tests
+ 6563  git co parallel-tests `
+ 6564  git co parallel-tests 
+ 6567  git mv inspect_paralle_tria.cc inspect_parall_tria.cc
+ 6568  git mv inspect_paralle_tria.mpirun=2.output inspect_parall_tria.mpirun=2.output
+ 6581  git push --set-upstream origin smoother-luca
+ 6582  cd students_git
+ 6594  git commit -am 'RM ME.'
+ 6595  git rebase origin main
+ 6596  git rebase origin master
+ 6597  git reset --cached HEAD
+ 6598  git reset --soft HEAD
+ 6599  git co local_refinement
+ 6600  git reset --soft master
+ 6601  git push -f origin local_refinement
+ 6606  git commit -am 'Try to make local refinement robust.'
+ 6636  git clone git@github.com:2listic/dealiiX-platform.git
+ 6653  git remote v
+ 6673  git add reddy.pdf
+ 6674  git commit -m 'No more stronzo.'
+ 6685  git diff  ../grids/add_meshes/unit-square.msh
+ 6691  git rm ../grids/add_meshes/unit-square_0.msh
+ 6697  git mv ./unit-square_1.msh unit-square1.msh
+ 6698  git mv ./unit-square_2.msh unit-square2.msh
+ 6705  git mv ./unit-square1.msh unit-square_1.msh
+ 6706  git mv ./unit-square2.msh unit-square_2.msh
+ 6734  git commit -m 'dealii-X ack.'
+ 6735  git add paper.tex
+ 6736  git commit -m 'More ack.'
+ 6737  git add ../include/coral_network.h
+ 6739  git add  ../gtests/network.cc
+ 6740  git add  ../test_files/editor-state.json
+ 6741  git commit -am 'Move taskflow outside NodeObject. Added Network class.'
+ 6747  git commit -am 'Fix include json.'
+ 6748  git st json
+ 6750  git mv json nlohmann
+ 6754  git commit -am 'New json fix.'
+ 6756  code ../.gitignore
+ 6764  cd /Users/heltai/dualistic/coral-editor/dealii_backend && git checkout -- gtests/serialize.cc
+ 6766  git commit -am 'Make coral independent on deal.'
+ 6777  git add mwe.json
+ 6781  git commit -am 'Network connections. Network serialization.'
+ 6831  git add gtests/dealii_types.cc
+ 6832  git add include/coral.h
+ 6833  git add include/type_name.h
+ 6834  git add include
+ 6835  git commit -m 'Fix compilation warnings on CI.'
+ 6843  git st taskflow
+ 6844  git add taskflow/
+ 6845  git commit -m 'Updated Taskflow.'
+ 6866  git add gtests/failing.cc
+ 6867  git commit -am 'Temporary rm failing tests.'
+ 6868  git push origin dealii-backend
+ 6869  git add .devcontainer/devcontainer.json
+ 6871  git commit -m 'Add .devcontainer.'
+ 6872  cp ~/c++/bare-dealii-app/.github/workflows/doxygen.yml .github/workflows/
+ 6879  git rm package.json
+ 6880  git co -b rm-frontend
+ 6881  git rm src/
+ 6882  git rm -r src/
+ 6883  git add .github/workflows/doxygen.yml
+ 6888  git rm babel.config.js 
+ 6889  git rm README.md
+ 6890  git rm Dockerfile
+ 6893  cp dealii_backend/.gitignore .
+ 6894  git mv dealii_backend/* .
+ 6895  git mv -h
+ 6896  git mv -k dealii_backend/* .
+ 6897  git mv magic_enum include
+ 6898  git mv nlohmann include
+ 6899  git mv taskflow include
+ 6900  git restore dealii_backend/.clang-format
+ 6901  git mv dealii_backend/.clang-format .
+ 6902  git rm dealii_backend/.gitignore
+ 6908  git add -f devcontainer.json
+ 6909  code .gitignore
+ 6910  git wt
+ 6911  git add  include/coral.h README.md
+ 6915  git commit -m 'Removed frontend specific files.'
+ 6916  git add .github/workflows/tests.yml
+ 6917  git commit -m 'Fixed workflow.'
+ 6918  git commit -m'Silence warnings for json.'
+ 6919  git push --set-upstream origin rm-frontend
+ 6920  git clone git@github.com:vicdolean/domain-decomposition-notes.git
+ 6946  git add lecture_notes/12\ -\ LAB\ -\ local\ refinement.pdf lecture_notes/14\ -\ LAB\ -\ systems\ of\ pdes.pdf
+ 6947  git commit -m 'Added two labs.'
+ 6953  git restore  source/laplacian.cc
+ 6957  git rm Makefile
+ 6959  git rm tests/Makefile gtests/Makefile
+ 6961  git rm ./Testing/Temporary/LastTestsFailed.log
+ 6962  git rm ./Testing/Temporary/LastTest.log
+ 6964  git rm -f `find . -name cmake_install.cmake`
+ 6965  git rm  `find . -name cmake_install.cmake`
+ 6966  git rm gtests/cmake_install.cmake
+ 6967  git commit -am 'Removed some files.'
+ 6969  git co -b bare-minimal
+ 6970  git commit -am 'Copy back first failing test.'
+ 6975  git commit -am 'Fixed construction of elementary types.'
+ 6976  git push --set-upstream origin bare-minimal 
+ 6980  git add gtests/dealii_examples.cc
+ 6981  git commit -am 'MWE with step-1.'
+ 6993  git add  ../gtests/dealii_examples.cc
+ 6994  git commit -m 'MWE 0.'
+ 7004  git clone https://git@git.overleaf.com/68727f72ac00a087c9503bd4 2025_mre_inversion
+ 7014  git add   ../../include/coral_utilities.h
+ 7015  git commit -am 'Fixed almost all tests.''\n'
+ 7016  git co -b fix-tests
+ 7017  git push origin fix-tests
+ 7018  git diff  ../source/poisson.cc
+ 7019  git add  ../gtests/domain_decomposition_01.cc
+ 7020  git add  ../gtests/gtest_main.cc
+ 7021  git add  ../gtests/two_level_01.cc
+ 7024  git commit -am 'Start of DD.'
+ 7025  git add  ../prms/01_domain_decomposition.prm
+ 7026  git commit -m 'added parameter.'
+ 7027  git push origin smoother-luca
+ 7029  git add ../README.md
+ 7030  git co smoother-luca
+ 7031  git rebase origin/main
+ 7045  git co -b dd-tests
+ 7046  git rebase origin/parallel-tests
+ 7047  git diff  include/gmsh_api_parallel.h\n
+ 7048  history | grep git\n
+ 7049  git rebase -Xignore-space-change origin/parallel-tests
+ 7050  git push origin parallel-tests
+ 7059  git remote add raksha git@github.com:devi-raksha/dealii.git
+ 7062  git fetch
+ 7063  git co -b gmsh-api-restructuring
+ 7064  git remote set-url 
+ 7067  git remote set-url origin git@github.com:2listic/coral.git
+ 7068  git pull origin mas
+ 7087  git co -b fix-tests-2
+ 7088  git commit -am 'Fix last remaining test. Remove escapes.'
+ 7090  git commit -am 'Fix also arguments.'
+ 7092  git rm -f IJNBME/main_ijnmbe.pdf
+ 7093  git commit -m 'Removed pdf.'
+ 7094  git rm IJNBME/main_ijnmbe.pdf
+ 7099  git add ../CMakeLists.txt
+ 7100  git commit -m 'Silence warnings.'
+ 7101  git push origin fix-tests-2
+ 7148  git rm step-40_gmsh.mpirun=1.ouput
+ 7156  git rm  ../../include/deal.II/gmsh/gmsh_api_parallel.h 
+ 7157  git rm -f   ../../include/deal.II/gmsh/gmsh_api_parallel.h 
+ 7158  git add   ../../include/deal.II/gmsh/utilities.h
+ 7159  git add  ../../source/gmsh/utilities.cc  ../../source/gmsh/utilities.inst.in
+ 7163  git rm load_grid_0*
+ 7164  git mv load_grid_parallel.cc read_partitioned_msh_01.cc 
+ 7165  git mv load_grid_parallel.output read_partitioned_msh_01.output
+ 7166  git mv load_grid_parallel.mpirun=2.output read_partitioned_msh_01.mpirun=2.output
+ 7167  git mv grids/add_meshes/unit-square_* ../grid/grids/
+ 7168  git mv grids/square-quad* ../grid/grids/
+ 7170  git rm   grids/add_meshes/unit-square.geo   grids/add_meshes/unit-square.msh 
+ 7171  git add   ../grid/grids/unit-square.*
+ 7172  git mv  step-40_gmsh.cc  step-40_simplex_from_gmsh.cc
+ 7173  git mv step-40_gmsh.mpirun=2.output step-40_simplex_from_gmsh.mpirun=2.output
+ 7174  git mv step-40_quad.cc step-40_quad_from_gmsh.cc
+ 7175  git mv step-40_quad.mpirun=2.output step-40_quad_from_gmsh.mpirun=2.output
+ 7176  git add read_partitioned_msh_01.cc
+ 7177  git add  step-40_quad_from_gmsh.cc
+ 7178  git add  step-40_simplex_from_gmsh.cc
+ 7180  git commit -m 'Cleanup.'
+ 7182  git commit -am 'Fixed namespace.'
+ 7191  git add ../minor/20250725DeviHeltai
+ 7192  git commit -m 'Changelog.'
+ 7196  git cleanup -r
+ 7197  git cleanup .
+ 7198  git cleanup . 
+ 7199  git clean -fd
+ 7200  git diff  include/deal.II/meshworker/copy_data.h
+ 7201  git rebase --skip 
+ 7202  git reset --hard raksha/gmsh-api-restructuring
+ 7203  git rm include/deal.II/gmsh/gmsh_api.h
+ 7204  git rm include/deal.II/gmsh/debug_utils.h
+ 7205  git rm tests/gmsh/grids/
+ 7206  git rm -r tests/gmsh/grids/
+ 7207  git remote add marco https://github.com/fdrmrc/deliverables.git
+ 7208  git fetch marco
+ 7209  git pull marco D1.1
+ 7210  git push buttari D1.1
+ 7215  git tag final-rev-luca
+ 7216  git commit -am 'Small corrections by LH.'
+ 7217  git push origin master
+ 7218  git rebase --continue
+ 7219  git tag
+ 7221  latexdiff-vc  --flatten --git -r final-rev-luca main.tex
+ 7224  git diff final-rev-luca
+ 7226  git commit -am 'Fixed reply.'
+ 7231  git commit -am 'Changes by LH'
+ 7238  git commit -am 'LH contributions.'
+ 7241  git commit -am 'Fixed FEM section.'
+ 7242  git commit -am 'Fix inversion.'
+ 7243  git commit -am 'Minor wording.'
+ 7244  git commit -am 'minor.'
+ 7245  git commit -am 'i -> j'
+ 7246  git pull --set-upstream raksha gmsh-api-restructuring
+ 7254  git add  ../include/utils.h
+ 7255  git commit -am 'Fix tests. Ref factor. Max levels.'
+ 7257  git add ../data/tests/reduced_poisson_01_one_cylinder_p1.prm
+ 7258  git add -f ../data/tests/reduced_poisson_01_one_cylinder_p1.prm
+ 7259  git commit -m 'Fix prm.'
+ 7267  git commit -am 'Remove pref-refinement level.'
+ 7268  git cleanup
+ 7270  git co blood_flow_1d
+ 7295  git init .
+ 7296  git add main.tex
+ 7297  git commit -m 'GPT4.5 version.\n'
+ 7299  git fetch raksh
+ 7300  git fetch raksha
+ 7301  git br -a
+ 7302  git co branch-fixes
+ 7304  git diff ../include/deal.II/gmsh/ 8a82d4c034e79e4ad3c25c6040dfcde4cc1857ad
+ 7305  git diff ../include/deal.II/gmsh/ -r 8a82d4c034e79e4ad3c25c6040dfcde4cc1857ad
+ 7306  git diff ../include/deal.II/gmsh/  8a82d4c034e79e4ad3c25c6040dfcde4cc1857ad HEAD
+ 7307  git diff 8a82d4c034e79e4ad3c25c6040dfcde4cc1857ad ../include/deal.II/gmsh/
+ 7309  git push raksha branch-fixes
+ 7310  git diff 8a82d4c034e79e4ad3c25c6040dfcde4cc1857ad ../source/gmsh/
+ 7337  git pull raksha branch-fixes
+ 7338  git co gmsh-api-restructuring 
+ 7339  gitp pull 
+ 7340  git reset --hard 20f0a027fa
+ 7341  git rm step-40_simplex_from_gmsh.mpirun=2.output step-40_quad_from_gmsh.mpirun=2.output read_partitioned_msh_01.output read_partitioned_msh_01.mpirun=2.output 
+ 7343  git commit -m 'Remove stale files.'
+ 7344  git pre-commit install 
+ 7358  git commit -am 'Code example for magic enum.'
+ 7381  git add source/gmsh/utilities.inst.in
+ 7390  git commit -m 'Fix indent.'
+ 7393  git rebase -i origin/master --author "Raksha Devi <rakshavmvp@gmail.com>"\n
+ 7394  git rebase -i origin/master\n
+ 7395  git commit --amend --author "Raksha Devi <rakshavmvp@gmail.com>" --committer "Raksha Devi <rakshavmvp@gmail.com>"
+ 7396  git commit --amend --author "Raksha Devi <rakshavmvp@gmail.com>" 
+ 7504  git co origin/master
+ 7505  git co -b master
+ 7506  git pull upstream master
+ 7514  git add D1.4_improvements.tex
+ 7515  git co -b D1.4
+ 7516  git commit -m 'Added draft.'
+ 7523  git stsh
+ 7526  git commit -am 'Improvements.'
+ 7527  git push origin D1.4
+ 7529  git reset --hard 93f0f50
+ 7530  git push -f origin main
+ 7531  git co -b D1.4bis  99c508d
+ 7532  git cherry-pick \n1fa7e65
+ 7533  git cherry-pick 1fa7e65\n1fa7e65
+ 7534  git push origin D1.4bis
+ 7536  git co D1.4bis
+ 7537  git pull origin D1.4bis
+ 7538  git co fixup_d1.4
+ 7552  git worktree add ../deliverables-2
+ 7553  git co -b D1.4-v3
+ 7557  git co D1.2
+ 7558  git pull origin D1.2
+ 7562  git add D1.3_dealii_report.tex D1.3_dealii_report.synctex\(busy\)
+ 7563  git rm D1.3_dealii_report.synctex\(busy\) 
+ 7564  git commit -m 'Fixed UNIPI part.'
+ 7565  git co -b D1.3_LH
+ 7566  git push origin D1.3_LH
+ 7570  git clone https://github.com/MScespun/lab-ns scardala
+ 7601  git pull origin main
+ 7632  git clone git@github.com:dtcc-platform/dtcc.git
+ 7637  git clone https://git@git.overleaf.com/67cfed5bda329cc7a75b9251 2025_al_dlm
+ 7643  git commit -am 'Fixed figure.'
+ 7644  git add elliptic_FD_2.pdf
+ 7645  git commit -m 'Updated pic.'
+ 7646  $ curl -O https://raw.githubusercontent.com/firedrakeproject/firedrake/refs/tags/2025.4.2/scripts/firedrake-configure\n
+ 7647  curl -O https://raw.githubusercontent.com/firedrakeproject/firedrake/refs/tags/2025.4.2/scripts/firedrake-configure\n
+ 7659  git stash drop
+ 7660  git restore --staged 
+ 7661  git restore --staged  .
+ 7666  git remote -=v
+ 7667  git fetch raksha 
+ 7710  git restore square-quad*msh
+ 7720  git diff unit-square.msh
+ 7731  git pull raksha gmsh-api-restructuring
+ 7738  git restore ../examples/step-40/CMakeLists.txt
+ 7764  git diff *geo
+ 7773  git add unit-square*
+ 7774  git rm step-7_quad_with_boundaryID.*
+ 7777  git add read_partitioned_msh_0*
+ 7778  git add step-40_* 
+ 7779  git add ../grid/grids/square-quad*
+ 7781  git commit -am 'Fixed test outputs with boundary ids.'
+ 7782  git push raksha gmsh-with-boundaryID
+ 7793  git clone git@github.com:devi-raksha/Advection-reaction.git
+ 7795  git co master 
+ 7796  git co -b fix-interface-values origin/master
+ 7797  git add  ../../../include/deal.II/fe/fe_interface_values.h 
+ 7798  git commit -m 'Fix a missing spacedim.'
+ 7799  git push heltai fix-interface-values
+ 7800  git co gmsh-with-boundaryID
+ 7801  git pull heltai gmsh-with-boundaryID
+ 7802  git rebase -Xignore-all-space -i gmsh-api-restructuring
+ 7805  git diff f005252b21 a1b385b838
+ 7806  git rebase -i gmsh-api-restructuring
+ 7808  git push -f raksha gmsh-with-boundaryID
+ 7809  git push heltai gmsh-api-restructuring
+ 7810  git co gmsh-with-boundaryID 
+ 7813  git push -f heltai gmsh-with-boundaryID
+ 7814  git reset --hard gmsh-with-boundaryID
+ 7815  git push raksha gmsh-api-restructuring
+ 7816  git commit --amend -a
+ 7817  git push -f heltai gmsh-api-restructuring
+ 7818  git br -D gmsh-with-boundaryID
+ 7819  git co -b read_partitioned_msh_with_ids
+ 7820  git co gmsh-api-restructuring
+ 7821  git reset --hard 5eccf9458c 
+ 7822  git reset --hard f005252b216149a0dac6a7d60f9b711c4cce37c0 
+ 7823  git push -f raksha gmsh-api-restructuring
+ 7824  git co read_partitioned_msh_with_ids
+ 7825  git reset --hard f005252
+ 7826  git reset --hard 5eccf94
+ 7829  git add mesh-from-step49.geo 
+ 7830  git add lshaped.geo
+ 7831  git commit --amend
+ 7832  git push -f origin read_partitioned_msh_with_ids
+ 7838  git commit -a --amend
+ 7840  git push -f heltai read_partitioned_msh_with_ids
+ 7863  git commit -am 'Running up to a point.'
+ 7879  vi .gitconfig
+ 7880  cat .gitconfig
+ 7881  cat id_rsa_for_github_lectures
+ 7882  cat id_rsa_for_github_lectures.pub 
+ 7912  git worktree -h
+ 7913  git worktree remove ../dealii-for-class
+ 7914  git worktree remove --force ../dealii-for-class
+ 7915  rm -rf .git
+ 7929  git mv step-90 step-110
+ 7930  git commit -m 'moved dir'
+ 7935  git add step-90.cc singular_integral_tools.h parameters.prm fe_coupling_values.h CMakeLists.txt 
+ 7936  git add coarse_*
+ 7937  git commit -m 'step-111'
+ 7938  git co -b step-111 origin/master
+ 7939  git cherry-pick 05e86c79dd
+ 7942  git co -b vtk-tools origin/master
+ 7957  git co -b test-branch origin/master
+ 7988  git co -b test-branch-2 origin/master
+ 7989  git  co -b test-branch-2 origin/master    
+ 8009  git br 
+ 8010  git br | grep step-80
+ 8011  git co step-80
+ 8012  git diff step-80-new
+ 8013  git co step-80-new
+ 8014  git push -f heltai step-80-new
+ 8015  git commit -am 'Fixed compilation warnings with 9.8.pre.'
+ 8018  git add builds-on
+ 8019  git add -f builds-on
+ 8020  git commit -m 'Added builds-on'
+ 8024  git commit -m 'Response to Rev2 - part 1.'
+ 8025  git add reply.tex
+ 8026  git commit -m 'Reply.'
+ 8028  git add CMakeLists.txt
+ 8029  git commit -m 'Make indent happy.'
+ 8053  git commit -am 'Running.'
+ 8056  git commit -am 'Stokes -> NavierStokes'
+ 8057  git push -f 
+ 8076  git commit -am 'Navier Stokes working (?)'
+ 8081  git co brain_dynamics
+ 8087  git rebase --abort
+ 8093  git remote set-url origin git@github.com:luca-heltai/immersed_elasticity_fibers.git 
+ 8094  git co FRM
+ 8095  git push origin FRM
+ 8096  git co OneD
+ 8097  gitp ull 
+ 8098  git remote add gitlab git@gitlab.com:code_projects/immersed-elasticity.git
+ 8099  git fetch gitlab
+ 8100  git pull gitlab master
+ 8101  git co parallel 
+ 8102  git pull gitlab parallel
+ 8103  git push origin parallel
+ 8104  git co FinalSame
+ 8105  git push origin FinalSame
+ 8115  cd /Users/heltai/GitHub/luca-heltai.github.io
+ 8116  git commit -am 'New version.'
+ 8117  git commit -am 'Added replies to paper.'
+ 8118  git commit -am 'Removed blue.'
+ 8119  gitp ush 
+ 8120  git commit -am 'Rewording.'
+ 8121  git restore source/lac/affine_constraints.inst.in 
+ 8122  git restore examples/step-40/CMakeLists.txt 
+ 8127  git commit -am 'Code review.'
+ 8128  git push origin read_partitioned_msh_with_ids
+ 8129  git pull --rebase origin read_partitioned_msh_with_ids
+ 8130  git push heltai read_partitioned_msh_with_ids
+ 8135  git commit -am 'minor'
+ 8137  git clone git@github.com:nico-martin/jarvis.git
+ 8154  cd GitHub/luca-heltai.github.io
+ 8155  git add wp-content/
+ 8156  git add calcolo-numerico/index.html
+ 8157  git add numerical-methods-for-
+ 8158  git add numerical-methods-for-*
+ 8159  git commit -am 'Oct. 2.'
+ 8161  git commit -am 'Update.'
+ 8162  git commit -am 'Updated link.'
+ 8164  git add wp-content/uploads/2025/02/pexels-matej-117839-776336-scaled.jpg
+ 8165  git commit -am 'Improved Home.'
+ 8166  git commit -am 'Updated publications.'
+ 8167  git commit -am 'Updated link.\n'
+ 8190  git clone https://git@git.overleaf.com/68d13b1ea5a95aa8f7534848 2025_1d_blood_flow
+ 8194  git restore --staged method.tex
+ 8195  git restore method.tex
+ 8208  git add .clang-format
+ 8212  git add scripts/
+ 8213  git commit -am 'Indent.'
+ 8215  git commit -am 'Try to fix semi-implicit'
+ 8227  git add tests/
+ 8228  git add CMakeLists.txt include/blood_flow_system_updated_1d3d.h
+ 8229  git commit -m 'Added tests.'
+ 8230  git add ../tests/
+ 8232  git commit -m 'Wrong output, but test passes.'
+ 8235  git add ../tests/test_mass_integration.*
+ 8236  git commit -m 'Added test for mass integration.'
+ 8239  git add ../tests/test_mass_integration_velocity.*
+ 8240  git commit -m 'Make sure integration works on velocity'
+ 8241  git clone https://github.com/wildmeshing/fTetWild.git
+ 8270  git  clone git@github.com:luca-heltai/bar-scanner.git
+ 8272  git commit -am 'More robust scanning.\n'
+ 8273  git commit -am 'Small improvements.'
+ 8274  git commit -am 'Try avoiding multiple permission requests.'
+ 8275  git commit -am 'Second try.'
+ 8276  git commit -am 'Third fix.'
+ 8277  git commit -am 'Fourth fix.'
+ 8278  git commit -am 'Fifth fix.'
+ 8279  git commit -am 'Fifth fix.'; git push 
+ 8280  git commit -am '6 fix.'; git push 
+ 8281  git commit -am '7 fix.'; git push 
+ 8282  git commit -am '8 fix.'; git push 
+ 8283  git commit -am '9 fix.'; git push 
+ 8284  git commit -am '10 fix.'; git push 
+ 8285  git commit -am '11 fix.'; git push 
+ 8289  git clone git@github.com:undecaf/zbar-wasm.git
+ 8292  cp -r * ../../../luca-heltai.github.io
+ 8293  cd ../../../luca-heltai.github.io
+ 8296  git add css img js 
+ 8298  git add index.html
+ 8299  git commit -am 'Zbar.'
+ 8301  git commit -m 'Using zbar.\n\n'
+ 8302  git co -b old-version b6ce010
+ 8303  git commit -am 'bbox.'
+ 8304  git co old-version
+ 8307  git commit -am 'New style.'
+ 8308  git commit -am 'Try fix.'
+ 8310  git commit -am 'Zoom.'
+ 8325  git clone git@github.com:openfoodfacts/smooth-app.git
+ 8346  git co -b update
+ 8352  git co master
+ 8372  git 
+ 8373  git commit -am 'Fix zoom to 2x'
+ 8387  git co -b minor-fixes
+ 8388  git commit -am 'Include.'
+ 8390  git commit -am 'Remove a deprecation warning.'
+ 8391  git push origin minor-fixes
+ 8394  git clone git@github.com:luca-heltai/sspa.git 01_scientific_software_tools_and_parallel_algorithms
+ 8411  git add README.md jupyterbook/lectures/ jupyterbook/_toc.yml jupyterbook/_config.yml
+ 8412  git commit -m 'First iteration of lectures.'
+ 8413  git add .github
+ 8414  git add .github/
+ 8415  vi .gitignore 
+ 8416  git add -f .github/workflows/build-book.yml
+ 8417  git commit -m 'Workflows and gitignore.'
+ 8418  git co explicit_computation 
+ 8424  git commit -am 'Fix permissions.?'
+ 8429  git add jupyterbook/logo.png
+ 8430  git commit -am 'Fix links.'
+ 8442  git add an-introduction-to-scientific-software-tools-and/ wp-content/
+ 8443  git commit -am 'Updated.'
+ 8444  git rm -rf an-introduction-to-scientific-software-tools-and/
+ 8445  git add scientific-software-tools-and-parallel-algorithms/
+ 8446  git commit -am 'Scientific software tools.'
+ 8447  git add  404/index.html\n
+ 8448  vi ~/.gitconfig
+ 8449  git commit -m 'Removed old files.'
+ 8465  git add burgers.tex
+ 8466  git commit -m 'tex.'
+ 8467  git add ../latex/burgers.tex
+ 8468  git restore ../source/burger_equation.cc
+ 8471  git add high-performance-solutions-of-partial-differential-equations/ wp-content/ 
+ 8472  git commit -am 'Added HPSPDEs.'
+ 8473  git add supporting-computational-science-and-engineering/ 
+ 8474  git commit -am 'Blog.'
+ 8476  git clone https://github.com/frnext/horos.git
+ 8580  git cleanupmain
+ 8581  git br -D bare-minimal
+ 8582  git co pybind11
+ 8627  git difff
+ 8628  git co -b non_linear_advection_diffusion
+ 8629  git co -b non_linear_conservation_law
+ 8631  git add non_linear_conservation_law.cc
+ 8635  git add main_non_linear_conservation_law.cc
+ 8636  git commit -am 'Compiling.'
+ 8637  git add ../include/non_linear_conservation_law.h
+ 8638  git commit --amend 
+ 8640  git co -b fix-doc-css origin/master
+ 8641  git remote 
+ 8664  git co -b function-parser-improvements
+ 8718  git commit -am 'Seems converging.'
+ 8719  git br
+ 8720  git commit -am 'Working adv reac.'
+ 8721  git commit -am 'Lax-Friederich.'
+ 8722  git push origin non_linear_conservation_law
+ 8728  git commit -am 'Update links.'
+ 8729  git commit -am 'Update teaching page.'
+ 8730  git add wp-content/plugins/
+ 8731  git commit -am 'Update elementor.'
+ 8749  git pull --set-upstream origin non_linear_conservation_law
+ 8750  git diff 69a0617
+ 8752  git diff 789c687
+ 8763  git commit -am 'Make sure we use parsed functions.'
+ 8764  git commit -am 'Try to fix constant pressure.'
+ 8765  git commit -am 'put back pressure on rhs.'
+ 8786  git co -b revealjs
+ 8787  git co -b revealjs-demo
+ 8788  git push -u origin revealjs-demo
+ 8789  git fetch 
+ 8790  git co main 
+ 8802  git submodule add https://github.com/hakimel/reveal.js.git
+ 8832  git rm .gitmodules reveal.js
+ 8833  git rm --cached .gitmodules reveal.js
+ 8834  rm .gitmodules
+ 8876  git mv jupyterbook src
+ 8884  git st .
+ 8929  git mv src jupyterbook
+ 9011  ssh -T git@github.com
+ 9013  git add jupyterbook/slides/
+ 9014  git rm  jupyterbook/_config.yml
+ 9015  git rm  jupyterbook/_toc.yml 
+ 9016  git rm build.sh
+ 9022  git add README.md Makefile docker_images/ start.sh
+ 9024  git add jupyterbook/index.md Makefile
+ 9026  git add jupyterbook/myst.yml 
+ 9029  git add Makefile
+ 9030  git add jupyterbook/slides/slides00.md 
+ 9031  git add jupyterbook/slides/slideshow.html
+ 9032  git commit -m 'Intro.'
+ 9033  git br -D revealjs-demo
+ 9034  cd .github
+ 9036  git diff 8913d9ad72dca6ddaa2054a5828c6af738feb90d build-book.yml
+ 9037  git reset -h
+ 9038  git reset build-book.yml  8913d9ad72dca6ddaa2054a5828c6af738feb90d build-book.yml
+ 9039  git reset --hard origin/main
+ 9040  git add build-book.yml
+ 9041  git commit -m 'Build book.'
+ 9052  git add reval.js
+ 9053  git commit -am 'Fix slideshow.'
+ 9054  git commit -am 'Trying to fix CI.'
+ 9058  git commit -am 'Try debugging.'
+ 9059  git commit -am 'Try debugging. 2'
+ 9060  git add jupyterbook/slides/slides00.html
+ 9077  git restore jupyterbook/slides/reveal.js/
+ 9078  git restore jupyterbook/slides/reveal.js
+ 9079  git rm jupyterbook/slides/slideshow.html
+ 9096  git add codes/
+ 9098  git add jupyterbook/slides/logo_white.png jupyterbook/slides/slides01.html
+ 9100  git commit -am 'Lecture 1.'
+ 9102  git commit -am 'Fix footer.'
+ 9103  git commit -am 'Fix base url.'
+ 9107  git add  .github/workflows/build-book.yml 
+ 9108  git commit -m 'base url.'
+ 9109  git commit -am 'Fix rel address'
+ 9114  git add jupyterbook/index.md
+ 9115  git add jupyterbook/lectures/lecture00.md
+ 9116  git add .github/workflows/build-book.yml
+ 9117  git commit -m 'Update path.'
+ 9119  git add jupyterbook/custom.css
+ 9120  git commit -m 'Remove "made with MyST.'
+ 9125  git commit -am 'Update personal information.'
+ 9129  git commit -am 'White.'
+ 9130  git mv jupyterbook/logo.png jupyterbook/slides/logo.png
+ 9131  git commit -am 'Logo.'
+ 9203  git commit -am 'Some changes.'
+ 9205  git commit -am 'Make sure we use parameters also in the functions.'
+ 9207  git commit -am 'Rationalize functions.'
+ 9208  git commit -am 'Fixed reasonable conditions.'
+ 9210  git add source/function.cc source/constants.cc include/function.h include/constants.h
+ 9211  git commit -am 'new files.\n\n'
+ 9212  git commit -am 'Fixed initial conditions.\n\n'
+ 9216  git commit -am 'Fixed residual.'
+ 9217  git commit -am 'Try fixing stuff.'
+ 9218  git commit -am 'Gitignore.'
+ 9219  git add .gitignore
+ 9220  git commit -m 'Fixed gitignore.'
+ 9226  cd /Users/heltai/collaborators/raksha/Advection-reaction && git diff include/blood_flow_system_updated_1d3d.h | head -100
+ 9227  git checkout include/blood_flow_system_updated_1d3d.h
+ 9228  git reset --hard HEAD
+ 9317  git st . 
+ 9318  git add slurm.conf
+ 9319  touch munge/.gitkeep
+ 9320  touch sspa-home/.gitkeep
+ 9321  git add munge/ sspa-home/
+ 9322  touch slurm-state/.gitkeep
+ 9323  vi slurm-state/.gitignore
+ 9324  git add slurm-state/.gitignore  
+ 9325  git add -f slurm-state/.gitignore  
+ 9326  cp slurm-state/.gitignore munge
+ 9327  cp slurm-state/.gitignore sspa-home
+ 9328  git restore --staged  munge/.gitkeep
+ 9329  git restore --staged sspa-home/.gitkeep 
+ 9331  rm sspa-home/.gitkeep
+ 9338  git add */.gitignore
+ 9339  git add -f */.gitignore
+ 9340  git add *sh
+ 9341  git add -f *sh
+ 9342  git add docker-compose.yml slurm-controller.Dockerfile slurm-worker.Dockerfile
+ 9343  git commit -am 'Fix slurm cluster.'
+ 9344  git add jupyterbook/slides/slides02.*
+ 9347  git commit -am 'Slides 2.'
+ 9350  git add *
+ 9351  git restore --staged scratch/.gitkeep  work/.gitkeep 
+ 9352  git add  codes/lab02/README.md 
+ 9364  git commit -am 'Slurm lecture.'
+ 9367  git add lecture0* 
+ 9369  git mv exercises jupyterbook/
+ 9370  git commit -am 'exercises,'
+ 9396  git commit -am 'fix docker.'
+ 9407  git commit -am 'Trying to fix #1'
+ 9408  git diff e07c96c
+ 9415  git add ../parameters/manufactured.ipynb
+ 9416  git commit -m 'Added jupyternotebook.;\n'
+ 9421  git commit -am 'new version.'
+ 9422  git push heltai step-80-new
+ 9426  git add category/awards/
+ 9427  git add highly-cited-researchers-2025/ wp-content/uploads/2025/11/
+ 9428  git commit -am 'Highly cited.'
+ 9463  git commit -am 'Try fixing stuff (unsuccesfully)'
+ 9471  git co main
+ 9472  git co pybind11 
+ 9514  git submodule update --init --recursive
+ 9516  git diff docker-compose.yml
+ 9531  git status -s
+ 9532  git status -b
+ 9533  git status -sb
+ 9538  mdfind "git*pdf"
+ 9539  mdfind "git"
+ 9548  mv ../Lecture\ 01\ -\ Introduction\ to\ Bash\ and\ Git.pdf git_power.pdf
+ 9549  cd git_power
+ 9550  rm -rf git_power
+ 9551  open -a Preview git_power.pdf
+ 9552  cd ../.git
+ 9569  git log -stat
+ 9570  git log --stat
+ 9571  cp ~/latex/courses/2022/02_ModernTools4CollaborativeScience/slides/Lecture\ 02\ -\ Advanced\ topics\ in\ Git.pdf docs/git_power_2.pdf
+ 9572  open -a Preview docs/git_power_2.pdf
+ 9573  git switch -h
+ 9574  git branch -h
+ 9575  git add **/*03*
+ 9576  git add jupyterbook/myst.yml
+ 9577  git commit -am 'Lecture 3.'
+ 9597  git remote =-v
+ 9599  git diff  docker_images/slurm.conf 
+ 9600  git add  docker_images/slurm.conf
+ 9601  git add docker_images/cgroup.conf
+ 9602  git add \tdocker_images/slurmdbd.conf
+ 9603  git add ectory)\n\tmodified:    
+ 9604  git add docker_images/slurm-controller.Dockerfile \n\tmodified:    
+ 9605  git add docker_images/slurm-worker.Dockerfile
+ 9606  git commit 'Try 3 (slurm fix).'
+ 9607  git commit -m 'Try 3 (slurm fix).'
+ 9608  git clone git@github.com:luca-heltai/sspa.git  01_sspa_test
+ 9610  git remote add file://../01_sspa
+ 9611  git remote add local01 file://../01_sspa
+ 9612  git remote seturl local01 file:///Users/heltai/courses/01_sspa
+ 9613  git remote set-url local01 file:///Users/heltai/courses/01_sspa
+ 9614  git fetch --all 
+ 9615  git branch -av
+ 9620  git init 
+ 9624  ls .git/objects/pack
+ 9625  git lohg
+ 9635  git add file1.txt file2.txt file3.txt file4.txt file5.txt
+ 9636  git commit -m 'My first commit'
+ 9637  cd .git
+ 9641  git branch fix-branch
+ 9642  git checkout fix-branch
+ 9643  git rm file5.txt
+ 9645  git restore file4.txt
+ 9646  git commit -m 'Removed file5.'
+ 9647  git branch -v
+ 9648  git checkout main
+ 9649  git checkout -b fix-branch2
+ 9650  git rm file4.txt
+ 9652  git commit -m 'Removed file4.'
+ 9653  git log
+ 9655  git add  file2.txt
+ 9656  git commit -m ' 2 -> 222 '
+ 9657  git checkout -b fix-branch3 321eb0028060ca2639acbf99443b5eef77be63c2 
+ 9658  git branch
+ 9660  git add file1.txt
+ 9661  git status
+ 9662  git commit -m ' 1 -> 111 '
+ 9665  open git_power.pdf
+ 9666  git add git_power.pdf
+ 9667  git commit -m 'Added git_power slides.'
+ 9669  git diff 31b2a0a3b0..5b41dc9218
+ 9674  git diff 
+ 9675  git diff  include/deal.II/base/parsed_function.h 
+ 9676  git restore --staged tests/base/parsed_function_01.*
+ 9678  git diff source/base/parsed_function.cc 
+ 9679  git add source/base/parsed_function.cc 
+ 9681  git commit -m 'Shorten documentation of ParsedFunction.'
+ 9682  git fetch --al 
+ 9683  git rmmissing
+ 9684  git commit -m 'News section.'
+ 9688  git push heltai function-parser-improvements
+ 9691  git add ../step-80.cc
+ 9693  git add ../parameters.prm
+ 9694  git commit -m 'Working rotating ball.'
+ 9712  git diff  c0980f5..0e6c86e
+ 9718  git commit -am 'No warnings.'
+ 9719  git commit -am 'Small changes.'
+ 9734  git add references.bib
+ 9735  git add  ../../examples/step-80/doc/intro.dox 
+ 9736  git commit -m 'Start documenting.'
+ 9745  git add doc/kind step-80.cc
+ 9746  git commit -m 'Fix doxygen.\n'
+ 9747  git pus 
+ 9748  git push
+ 9750  cd luca-heltai.github.io
+ 9751  git add .
+ 9752  git commit -m 'Images.'
+ 9753  git commit -am 'rhs.'
+ 9754  git pull --rebase
+ 9755  git pull --rebase heltai step-80-new
+ 9759  git commit -am 'Fix compilation.'
+ 9762  git commit -am 'Fix names.\n\n'
+ 9772  git fetch origin
+ 9773  git stash
+ 9781  git commit -am 'no warnings.\n\n'
+ 9782  git pull 
+ 9802  git commit -am 'Fix tests.'
+ 9803  git add ../parameters/*prm
+ 9804  vi ../.gitignore
+ 9805  git add ../parameters/*
+ 9806  git add ../.gitignore
+ 9808  git commit -m 'Added parameters.'
+ 9810  git add  ../tests/test_linear_01.cc  ../tests/test_linear_01.output 
+ 9815  git add  ../tests/test_linear_01.output
+ 9816  git add ../parameters/linear.prm
+ 9817  git commit -am 'Added linear test.'
+ 9827  ping www.github.com
+ 9828  git br -av
+ 9829  git fetch heltai
+ 9830  git fetch --all
+ 9831  git remote rm timo
+ 9832  git remote rm bangerth
+ 9833  git remote rm raksha
+ 9834  git remote rm zhaowei
+ 9835  git remote -v
+ 9836  git reset --hard heltai/step-80-new
+ 9841  git pull origin master
+ 9845  git wl
+ 9847  git rebase origin/master
+ 9866  git add ../source/vtk/
+ 9867  git add ../include/deal.II/vtk/utilities.h
+ 9873  git add  ../vtk/CMakeLists.txt
+ 9874  git add ../CMakeLists.txt ../vtk/utilities.*
+ 9887  git stash 
+ 9888  git pull
+ 9889  git diff  3a537a87a3..228f20c379 
+ 9890  git stash pop
+ 9891  git commit -am 'Renamed variables.'
+ 9892  git push 
+ 9901  git rm data_1_3.vtk
+ 9902  git rm -f data_1_3.vtk
+ 9905  git add  ../../../source/vtk/utilities.cc
+ 9908  git add  ../doc/news/changes/minor/20251125LucaHeltai
+ 9909  git commit -m 'Add VTKWrapperr::read_vtk'
+ 9910  git add   ../tests/vtk/read_vtk_01.*
+ 9914  git add generate_data.ipynb
+ 9917  git add *vtk
+ 9918  git add  ../read_vtk_01.cc
+ 9919  git commit -m 'Test VTKWrappers::read_vtk()'
+ 9920  git push heltai vtk-tools
+ 9921  git co -b vtk-tools-2
+ 9930  git commit -m 'VTKWrappers::read_cell_data()' 
+ 9931  git commit -m 'Test VTKWrappers::read_cell_data()' 
+ 9932  git push heltai vtk-tools-2
+ 9933  git add  ../source/vtk/utilities.cc 
+ 9934  git restore   vtk/data/generate_data.ipynb
+ 9935  git rebase vtk-tools
+ 9943  gits t
+ 9944  git diff
+ 9945  git diff > fix.patch
+ 9946  brew install git-filter-repo
+ 9947  git filter-repo
+ 9954  git filter-repo --force --script filter.py
+ 9957  touch .gitignore
+ 9958  git add ../../../doc/news/changes/minor/20251125LucaHeltai  ../../../source/vtk/utilities.inst.in 
+ 9959  git commit -m 'RM1'
+ 9960  git add *vtk .gitignore
+ 9961  git commit -m 'RM2'
+ 9962  git push -f origin vtk-tools-2
+ 9963  git co vtk-tools 
+ 9964  git reset --hard 53ded6ba6d4767636103036df6e52108f691826a
+ 9965  git push -f origin vtk-tools
+ 9966  git co vtk-tools-2
+ 9969  ls .git
+ 9970  cat .git
+ 9971  /Users/heltai/dealii/dealii/.git/hooks/pre-commit.sample
+ 9974  /Users/heltai/dealii/dealii/.git/hooks/pre-commit  run --all-files
+ 9978  vi ~/.gitignore
+ 9979  vi .gitignore
+ 9980  git st
+ 9981  git restore .gitignore  .pre-commit-config.yaml 
+ 9988  git commit -m 'RM'
+ 9989  git commit -am 'RM2'
+ 9990  git rebase -i
+ 9991  git rebase -i origin/master
+ 9992  git push -f heltai vtk-tools-2
+ 9993  git hist
+ 9994  git co vtk-tools
+ 9995  git reset --hard 13151915b2
+ 9996  git push -f heltai vtk-tools
+ 9997  git co vtk-tools-2 
+ 9998  git st 
+ 9999  git co -b vtk-tools-3
+10001  git st
+10002  git diff
+10012  git st
+10013  git restore --staged  read_vertex_data_01.*
+10014  git st
+10017  git st
+10019  git st
+10020  git diff
+10021  git add   ../../doc/news/changes/minor/20251125LucaHeltai-a
+10022  git st
+10023  git diff 
+10024  git add  ../../doc/news/changes/minor/20251125LucaHeltai-a
+10025  git st
+10026  git push heltai vtk-tools-3
+10027  git st
+10028  git rebase -i 
+10029  git rebase -i origin/master
+10030  git st
+10031  git diff
+10032  git st
+10033  git rebase --abort
+10034  git st
+10035  git hist
+10036  git rebase -i origin/master
+10037  git st
+10038  git rebase --abort
+10039  git rebase -i origin/master
+10040  git diff
+10041  git rebase --abort
+10042  git rebase -i origin/master
+10043  git rebase -i origin/master -X ignore-all-white-spaces
+10044  git st
+10045  git diff
+10046  git rebase -Xignore-all-space  -i origin/master
+10047  git rebase --abort
+10048  git rebase -Xignore-all-space  -i origin/master
+10057  git pull 
+10085  git co vtk-tools
+10086  git st
+10087  git rebase -i origin/master
+10088  git rebase --abort
+10089  git rebase -i origin/master
+10090  git push heltai vtk-tools
+10091  git push -f heltai vtk-tools
+10092  git co vtk-tools-2
+10093  git rebase vtk-tools
+10094  git rebase --abort
+10095  git rebase -Xignore-all-space vtk-tools
+10096  git st
+10097  git rebase --abort
+10098  git st
+10099  git rebase -Xignore-all-space vtk-tools
+10100  git st
+10101  git rebase -Xignore-all-space -i vtk-tools
+10102  git rebase --abort
+10103  git rebase -Xignore-all-space -i vtk-tools
+10104  git st
+10105  git st 
+10106  git rebase -Xignore-all-space -i vtk-tools
+10107  git push -f heltai vtk-tools-2
+10108  git co vtk-tools-3
+10109  git rebase -Xignore-all-space -i vtk-tools-2
+10110  git st
+10111  git add ../../source/vtk/utilities.cc
+10112  git st
+10113  git commit -m 'RM\n'
+10114  git rebase -Xignore-all-space -i vtk-tools-2
+10115  git push -f heltai vtk-tools-3
+10116  git st
+10117  git co vtk-tools
+10119  git st
+10120  git diff
+10121  git st
+10122  git add  ../../source/vtk/utilities.cc 
+10123  git push heltai vtk-tools
+10124  git co vtk-tools-2
+10125  git rebase vtk-tools
+10126  git push -f heltai vtk-tools-2
+10127  git co vtk-tools-3
+10128  git rebase vtk-tools
+10129  git push -f heltai vtk-tools-3
+10138  git st
+10140  git switch -h
+10141  history | grep git
+10142  git st 
+10143  git add jupyterbook/lectures/lecture04.md   jupyterbook/myst.yml jupyterbook/slides/slides04.* 
+10144  git st
+10145  git add jupyterbook/exercises/lecture04.md 
+10146  git commit -m 'Lec 4.'
+10147  git push 
+10148  git log --graph --oneline --decorate --all
+10149  git push -h
+10150  git co vtk-tools
+10151  git st 
+10152  git add ../../source/vtk/utilities.cc 
+10153  git commit -m 'Warn about cleanup fro VTK < 9.5.0'
+10154  git push heltai vtk-tools
+10155  git co vtk-tools-2
+10156  git rebase vtk-tools
+10157  git push -f heltai vtk-tools-2
+10158  git co vtk-tools-3
+10159  git rebase vtk-tools-2
+10160  git push -f heltai vtk-tools-3
+10161  git pull 
+10162  git st
+10163  git stash
+10164  git pull 
+10169  history | grep git
+10174  git remote -v
+10175  git hist
+10179  git remote -v
+10180  ssh -T git@github.com
+10186  git wl
+10187  git br -av
+10188  git remote -v
+10189  git fetch origin
+10191  git rebase origin/master
+10192  git status
+10193  git stash
+10194  git status
+10195  git rebase origin/master
+10196  git stash pop
+10197  git st
+10198  git diff
+10200  git st
+10201  git commit -a 'Change visualization style.'
+10202  git commit -am 'Change visualization style.'
+10203  git st
+10204  git commit -am 'Change visualization style.'
+10210* git remote -v
+10211* git remote add upstream git@github.com:luca-heltai/sspa-sandbox.git
+10212* git remote -v
+10216  git remote -v 
+10217  git checkout main
+10218  git push upstream main
+10220  git remote -v
+10221  git remote add heltai git@github.com:luca-heltai/sspa-sandbox.git 
+10222  git remote -v
+10224  git checkout -b branch-heltai
+10228  git history | grep git > log.txt
+10229  history | grep git > log.txt
+10232  git add log.txt
+10233  git commit -m 'Log of Heltai git commands.\n'
+10234  git status
+10235  git push heltai branch-heltai
