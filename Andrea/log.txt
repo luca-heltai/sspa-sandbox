@@ -1,10 +1,10 @@
- 1138  git init .
- 1140  git clone git@github.com:amoretti31/sspa-sandbox-fork-Andrea.git
- 1143  git chekcout -b EsercitazioneAndrea
- 1144  git branch EsercitazioneAndrea
- 1145  git remote -v
- 1146  git remote add heltai git@github.com:luca-heltai/sspa-sandbox-fork-Andrea.git
- 1147  git remote -v
- 1148  git status
- 1149  git checkout EsercitazioneAndrea
- 1150  git status
+ 1154  history | grep git > log.txt
+ 1155  git add log.txt
+ 1157  git status
+ 1158  git commit -m 'Log of Andrea's command in git.'
+ 1159  git commit -m "Log of Andrea's command in git."
+ 1160  git status
+ 1161  git push origin/branch-Andrea
+ 1162  git push origin branch-Andrea
+ 1163  git remote -v
+ 1164  git push origin EsercitazioneAndrea
