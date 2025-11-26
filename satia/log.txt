@@ -1,0 +1,94 @@
+   16  sudo apt install git -y
+   17  git --version
+   22  git clone git@github.com:luca-heltai/sspa.git
+  205  git clone git@github.com:luca-heltai/sspa.git
+  230  git --version
+  231  git config --global "Satia" git config --global user.email "satia.caroti@hotmail.it"
+  232  git config --list
+  233  git config --global user.name "Satia"
+  234  git config --global user.email "satia.caroti@hotmail.it"
+  235  git config --list
+  237  cat ~/.gitconfig
+  250  ssh -T git@github.com
+  251  git config --global url."git@github.com:".insteadOf "https://github.com/"
+  252  git config
+  253  git config --global user.name "Your Full Name"
+  254  git config --global user.email "you@example.com"
+  255  git config --global color.ui auto
+  256  git config --list --show-origin
+  257  ssh -T git@github.com
+  258  git config --global user.name "Satia"
+  259  git config --global user.email "satia.caroti@hotmail.it"
+  260  git config --global core.editor "code --wait"
+  261  git config --global color.ui auto
+  262  git config --global status.showUntrackedFiles all
+  263  git config --list --show-origin
+  264  git config --global --edit
+  269  git clone git@github.com:luca-heltai/sspa.git
+  279  git clone https://github.com/luca-heltai/sspa.git
+  282  git clone https://github.com/luca-heltai/sspa.git
+  366  git clone git@github.com:luca-heltai/sspa.git
+  375  git clone git@github.com:luca-heltai/sspa.git
+  378  git clone git@github.com:luca-heltai/sspa.git
+  747  git pull
+  748  git stash
+  749  git pull
+  753  git pull
+  863  git pull
+  870  git status
+  871  git restore munge
+  872  git status
+  873  git diff
+  874  git stash
+  875  git pull 
+  880  cd .git
+  885  git branche
+  886  git branches
+  888  git branches
+  889  git branche
+  893  git init
+  894  mkdir text_git
+  896  cd text_git
+  897  git init
+  898  git config --global init.defaultBranch <name
+  900  cd .git
+  904  git log
+  906  git log
+  938  git add .txt
+  940  git add *txt
+  941  git status
+  942  git commit -m 'My first commit'
+  943  cd .git/objetcs
+  944  cd .git
+  950  cd .git/objects/
+  954  git log
+  956  git branch fix-branch
+  957  git branch 
+  958  git branch -v
+  959  git checkout fix-branch
+  960  git rm file5.txt
+  962  git status
+  963  git restore file4.txt
+  964  git rm .txt
+  966  git status
+  967  git commit -m 'Removed file5'
+  968  git status
+  969  git branch -v
+  970  git status
+  979  git init .
+  991  git
+  992  git init
+  993  git init .
+  994  git remote -v
+  995  git init .
+  996  git remote -v
+ 1000  clone git@github.com:Satia2/sspa-sandbox.git
+ 1001  git clone git@github.com:Satia2/sspa-sandbox.git
+ 1005  git remote -v
+ 1006  git remote add heltai git@github.com:luca-heltai/sspa-sandbox.git
+ 1007  git remote -v
+ 1008  git checkout -b branch-satia
+ 1012  git history | grep
+ 1013  git history | grep git>log.txt
+ 1014  git history | grep git > log.txt
+ 1015  history | grep git > log.txt
