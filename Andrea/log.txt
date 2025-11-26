@@ -1,0 +1,10 @@
+ 1154  history | grep git > log.txt
+ 1155  git add log.txt
+ 1157  git status
+ 1158  git commit -m 'Log of Andrea's command in git.'
+ 1159  git commit -m "Log of Andrea's command in git."
+ 1160  git status
+ 1161  git push origin/branch-Andrea
+ 1162  git push origin branch-Andrea
+ 1163  git remote -v
+ 1164  git push origin EsercitazioneAndrea
