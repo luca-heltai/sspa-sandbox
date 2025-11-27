@@ -1,0 +1,69 @@
+ 1608  git clone git@github.com:vincenzoml/PLDW.git
+ 1612  git clone git@github.com:agraccione/Prova.git
+ 1617  git add prima_prova.txt 
+ 1618  git status
+ 1619  git commit -m "git pare carino"
+ 1620  git status 
+ 1621  git push 
+ 1624  man git
+ 1625  git init seconda_prova
+ 1626  git init 
+ 1627  cd .git/
+ 1643  git status 
+ 1645  git status 
+ 1650  git status 
+ 1652  git status 
+ 1699  git add README_tutorato.MD 
+ 1700  git status
+ 1701  git commit -m "minor changes"
+ 1702  git config user.email "a.graccione@studenti.unipi.it"
+ 1703  git status
+ 1704  git commit -m "minor changes"
+ 1705  git push
+ 1707  git status
+ 1708  git push 
+ 1709  git push --hel
+ 1710  git push --help
+ 1711  git add parsing_examples_tutorato.py 
+ 1712  git status 
+ 1713  git commit -m "added bonus exercise"
+ 1714  git push
+ 1715  git pull
+ 1716  git status 
+ 1717  git pull 
+ 1718  git config pull.rebase false
+ 1719  git status 
+ 1720  git pull main
+ 1722  git pull 03_A_mini_interpreter/
+ 1724  git pull PLDW/
+ 1725  git pull
+ 1727  git pull
+ 1730  git push 
+ 1789  git clone git@github.com:luca-heltai/sspa.git
+ 1791  git status 
+ 1920  git status 
+ 1949  cd .git
+ 1962  git branch 
+ 1963  git remote -v
+ 1964  man git fetch
+ 1967  git init 
+ 1968  git config --global init.defaultBranch test
+ 1969  ls .git/objects/pack/
+ 1970  git log 
+ 1978  git add *.txt
+ 1979  git commit -m "add files"
+ 1980  git config user.email "antonio.graccione@libero.it"
+ 1981  git config user.name "Antonio"
+ 1982  git commit -m "add files"
+ 1983  git status 
+ 1984  la .git/objects/
+ 1985  cd .git/objects/
+ 1991  git log
+ 1992  git branch fix_branch
+ 1994  git branch 
+ 1995  git checkout fix_branch 
+ 1996  git branch 
+ 1997  git log --stat 
+ 2000  git@github.com:luca-heltai/sspa-sandbox.git
+ 2002  git clone https://github.com/luca-heltai/sspa-sandbox.git
+ 2014  history | grep git > log.txt 
