@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structPricePoint" kind="struct" language="C++" prot="public">
+    <compoundname>PricePoint</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPricePoint_1a07edb21a29a5e614a070c0c448ed5613" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string PricePoint::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="18" column="15" bodyfile="main.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPricePoint_1a2d3b37142fa2549f41d382a126a26c27" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PricePoint::open</definition>
+        <argsstring></argsstring>
+        <name>open</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="19" column="15" bodyfile="main.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPricePoint_1a6e7943ea659a3f8b66889a436b14ef18" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PricePoint::high</definition>
+        <argsstring></argsstring>
+        <name>high</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="20" column="15" bodyfile="main.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPricePoint_1a4d9a64aa3c8f18ec8eae84d92ef3310a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PricePoint::low</definition>
+        <argsstring></argsstring>
+        <name>low</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="21" column="15" bodyfile="main.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPricePoint_1a4db79dc689f89d71db8d0ed69a37d0d8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PricePoint::close</definition>
+        <argsstring></argsstring>
+        <name>close</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="22" column="15" bodyfile="main.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPricePoint_1aef02acd6aa2ae015121e4b95f3fa55b1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PricePoint::adj_close</definition>
+        <argsstring></argsstring>
+        <name>adj_close</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="23" column="15" bodyfile="main.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPricePoint_1aeda0d45aea339202d675c6e3e87844fc" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long PricePoint::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="24" column="15" bodyfile="main.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a single historical price record.</para>
+<para>Contains date, open/high/low/close prices, adjusted close, and traded volume. </para>
+    </detaileddescription>
+    <location file="main.cpp" line="16" column="1" bodyfile="main.cpp" bodystart="17" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structPricePoint_1aef02acd6aa2ae015121e4b95f3fa55b1" prot="public" virt="non-virtual"><scope>PricePoint</scope><name>adj_close</name></member>
+      <member refid="structPricePoint_1a4db79dc689f89d71db8d0ed69a37d0d8" prot="public" virt="non-virtual"><scope>PricePoint</scope><name>close</name></member>
+      <member refid="structPricePoint_1a07edb21a29a5e614a070c0c448ed5613" prot="public" virt="non-virtual"><scope>PricePoint</scope><name>date</name></member>
+      <member refid="structPricePoint_1a6e7943ea659a3f8b66889a436b14ef18" prot="public" virt="non-virtual"><scope>PricePoint</scope><name>high</name></member>
+      <member refid="structPricePoint_1a4d9a64aa3c8f18ec8eae84d92ef3310a" prot="public" virt="non-virtual"><scope>PricePoint</scope><name>low</name></member>
+      <member refid="structPricePoint_1a2d3b37142fa2549f41d382a126a26c27" prot="public" virt="non-virtual"><scope>PricePoint</scope><name>open</name></member>
+      <member refid="structPricePoint_1aeda0d45aea339202d675c6e3e87844fc" prot="public" virt="non-virtual"><scope>PricePoint</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

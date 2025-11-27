@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structDrawdown" kind="struct" language="C++" prot="public">
+    <compoundname>Drawdown</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDrawdown_1ab07d3fc7fce86ccd81e3a269da3600dc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Drawdown::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="33" column="15" bodyfile="main.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDrawdown_1af5ffd19d9caab9698565e05d0994287c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Drawdown::start_date</definition>
+        <argsstring></argsstring>
+        <name>start_date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="34" column="15" bodyfile="main.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDrawdown_1a1a2239b0e3f39989bd350da07f6985f4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Drawdown::end_date</definition>
+        <argsstring></argsstring>
+        <name>end_date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="35" column="15" bodyfile="main.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the maximum drawdown found in a time series. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="main.cpp" line="31" column="1" bodyfile="main.cpp" bodystart="32" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structDrawdown_1a1a2239b0e3f39989bd350da07f6985f4" prot="public" virt="non-virtual"><scope>Drawdown</scope><name>end_date</name></member>
+      <member refid="structDrawdown_1af5ffd19d9caab9698565e05d0994287c" prot="public" virt="non-virtual"><scope>Drawdown</scope><name>start_date</name></member>
+      <member refid="structDrawdown_1ab07d3fc7fce86ccd81e3a269da3600dc" prot="public" virt="non-virtual"><scope>Drawdown</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
