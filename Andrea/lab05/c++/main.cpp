@@ -7,20 +7,25 @@
 #include <string>
 #include <vector>
 
+/** @brief Parameters of the ETF */
 struct PricePoint
 {
-  std::string date;
-  double      open{};
-  double      high{};
-  double      low{};
-  double      close{};
-  double      adj_close{};
-  long        volume{};
+  /** Trading date */
+  std::string date;   /** @brief open is a double number which represents the open price of the ETF*/
+  double open{};      /**  @brief high is a double number which represents the highest price, in that day, of the ETF */
+  double high{};      /**  @brief low is a double number which represents the lowest price, in that day, of the ETF */
+  double low{};       /**  @brief close is a double number which represents the closing price, in that day, of the ETF */
+  double close{};     /**  @brief adj_close is a double number which represents the adjustment of the closing price, in that day, of the ETF */
+  double adj_close{}; /**  @brief volume is a number which represents the volume of ETF exchanged that day*/
+  long volume{};
 };
 
+/**
+ * @brief Dorawdown is a function which calculate the maximum time passed between one maximum of the price and the next time in whcih that value is reached.
+ */
 struct Drawdown
 {
-  double      value{};
+  double value{};
   std::string start_date;
   std::string end_date;
 };
@@ -30,36 +35,36 @@ load_prices(const std::string &path)
 {
   std::ifstream in(path);
   if (!in)
-    {
-      throw std::runtime_error("Cannot open file: " + path);
-    }
+  {
+    throw std::runtime_error("Cannot open file: " + path);
+  }
 
   std::vector<PricePoint> data;
-  std::string             line;
+  std::string line;
 
   // Skip header
   std::getline(in, line);
 
   while (std::getline(in, line))
-    {
-      std::stringstream ss(line);
-      std::string       cell;
-      PricePoint        p;
-      std::getline(ss, p.date, ',');
-      std::getline(ss, cell, ',');
-      p.open = std::stod(cell);
-      std::getline(ss, cell, ',');
-      p.high = std::stod(cell);
-      std::getline(ss, cell, ',');
-      p.low = std::stod(cell);
-      std::getline(ss, cell, ',');
-      p.close = std::stod(cell);
-      std::getline(ss, cell, ',');
-      p.adj_close = std::stod(cell);
-      std::getline(ss, cell, ',');
-      p.volume = std::stol(cell);
-      data.push_back(p);
-    }
+  {
+    std::stringstream ss(line);
+    std::string cell;
+    PricePoint p;
+    std::getline(ss, p.date, ',');
+    std::getline(ss, cell, ',');
+    p.open = std::stod(cell);
+    std::getline(ss, cell, ',');
+    p.high = std::stod(cell);
+    std::getline(ss, cell, ',');
+    p.low = std::stod(cell);
+    std::getline(ss, cell, ',');
+    p.close = std::stod(cell);
+    std::getline(ss, cell, ',');
+    p.adj_close = std::stod(cell);
+    std::getline(ss, cell, ',');
+    p.volume = std::stol(cell);
+    data.push_back(p);
+  }
   return data;
 }
 
@@ -77,13 +82,13 @@ variance(const std::vector<double> &values)
 {
   if (values.size() < 2)
     return 0.0;
-  const double m     = mean(values);
-  double       accum = 0.0;
+  const double m = mean(values);
+  double accum = 0.0;
   for (double v : values)
-    {
-      const double diff = v - m;
-      accum += diff * diff;
-    }
+  {
+    const double diff = v - m;
+    accum += diff * diff;
+  }
   return accum / static_cast<double>(values.size() - 1);
 }
 
@@ -92,11 +97,11 @@ daily_returns(const std::vector<PricePoint> &prices)
 {
   std::vector<double> r;
   for (std::size_t i = 1; i < prices.size(); ++i)
-    {
-      double prev = prices[i - 1].close;
-      double curr = prices[i].close;
-      r.push_back((curr - prev) / prev);
-    }
+  {
+    double prev = prices[i - 1].close;
+    double curr = prices[i].close;
+    r.push_back((curr - prev) / prev);
+  }
   return r;
 }
 
@@ -112,33 +117,32 @@ annualized_return(const std::vector<double> &daily)
 Drawdown
 max_drawdown(const std::vector<PricePoint> &prices)
 {
-  double      peak   = -1e18;
-  double      max_dd = 0.0;
+  double peak = -1e18;
+  double max_dd = 0.0;
   std::string peak_date;
   std::string trough_date;
 
   for (const auto &p : prices)
+  {
+    if (p.close > peak)
     {
-      if (p.close > peak)
-        {
-          peak      = p.close;
-          peak_date = p.date;
-        }
-      double dd = (peak - p.close) / peak;
-      if (dd > max_dd)
-        {
-          max_dd      = dd;
-          trough_date = p.date;
-        }
+      peak = p.close;
+      peak_date = p.date;
     }
+    double dd = (peak - p.close) / peak;
+    if (dd > max_dd)
+    {
+      max_dd = dd;
+      trough_date = p.date;
+    }
+  }
 
   return {max_dd, peak_date, trough_date};
 }
 
-void
-write_gnuplot_series(const std::vector<PricePoint> &prices,
-                     const Drawdown                &dd,
-                     const std::string             &out_path)
+void write_gnuplot_series(const std::vector<PricePoint> &prices,
+                          const Drawdown &dd,
+                          const std::string &out_path)
 {
   std::ofstream out(out_path);
   if (!out)
@@ -147,12 +151,12 @@ write_gnuplot_series(const std::vector<PricePoint> &prices,
   out << "# date index close running_peak drawdown\n";
   double running_peak = -1e18;
   for (std::size_t i = 0; i < prices.size(); ++i)
-    {
-      running_peak    = std::max(running_peak, prices[i].close);
-      double drawdown = (running_peak - prices[i].close) / running_peak;
-      out << prices[i].date << " " << i << " " << prices[i].close << " "
-          << running_peak << " " << drawdown << "\n";
-    }
+  {
+    running_peak = std::max(running_peak, prices[i].close);
+    double drawdown = (running_peak - prices[i].close) / running_peak;
+    out << prices[i].date << " " << i << " " << prices[i].close << " "
+        << running_peak << " " << drawdown << "\n";
+  }
 
   std::cout << "Gnuplot-ready series written to " << out_path << "\n";
   std::cout << "Example plot command:\n"
@@ -162,50 +166,49 @@ write_gnuplot_series(const std::vector<PricePoint> &prices,
             << std::endl;
 }
 
-int
-main(int argc, char **argv)
+int main(int argc, char **argv)
 {
   const std::string csv_path = (argc > 1) ? argv[1] : "../vwce_2024.csv";
 
   try
+  {
+    auto prices = load_prices(csv_path);
+    if (prices.size() < 2)
     {
-      auto prices = load_prices(csv_path);
-      if (prices.size() < 2)
-        {
-          std::cerr << "Not enough data points.\n";
-          return 1;
-        }
-
-      std::vector<double> closes;
-      closes.reserve(prices.size());
-      for (const auto &p : prices)
-        closes.push_back(p.close);
-
-      const auto   returns          = daily_returns(prices);
-      const double avg_close        = mean(closes);
-      const double var_close        = variance(closes);
-      const double avg_daily_return = mean(returns);
-      const double ann_return       = annualized_return(returns);
-      const double volatility       = std::sqrt(variance(returns) * 252.0);
-      const auto   dd               = max_drawdown(prices);
-
-      std::cout << std::fixed << std::setprecision(4);
-      std::cout << "Data points: " << prices.size() << "\n";
-      std::cout << "Average close: " << avg_close << "\n";
-      std::cout << "Close variance: " << var_close << "\n";
-      std::cout << "Avg daily return: " << avg_daily_return << "\n";
-      std::cout << "Annualized return: " << ann_return << "\n";
-      std::cout << "Annualized volatility: " << volatility << "\n";
-      std::cout << "Max drawdown: " << dd.value << " (from " << dd.start_date
-                << " to " << dd.end_date << ")\n";
-
-      write_gnuplot_series(prices, dd, "vwce_gnuplot.dat");
-    }
-  catch (const std::exception &e)
-    {
-      std::cerr << "Error: " << e.what() << "\n";
+      std::cerr << "Not enough data points.\n";
       return 1;
     }
+
+    std::vector<double> closes;
+    closes.reserve(prices.size());
+    for (const auto &p : prices)
+      closes.push_back(p.close);
+
+    const auto returns = daily_returns(prices);
+    const double avg_close = mean(closes);
+    const double var_close = variance(closes);
+    const double avg_daily_return = mean(returns);
+    const double ann_return = annualized_return(returns);
+    const double volatility = std::sqrt(variance(returns) * 252.0);
+    const auto dd = max_drawdown(prices);
+
+    std::cout << std::fixed << std::setprecision(4);
+    std::cout << "Data points: " << prices.size() << "\n";
+    std::cout << "Average close: " << avg_close << "\n";
+    std::cout << "Close variance: " << var_close << "\n";
+    std::cout << "Avg daily return: " << avg_daily_return << "\n";
+    std::cout << "Annualized return: " << ann_return << "\n";
+    std::cout << "Annualized volatility: " << volatility << "\n";
+    std::cout << "Max drawdown: " << dd.value << " (from " << dd.start_date
+              << " to " << dd.end_date << ")\n";
+
+    write_gnuplot_series(prices, dd, "vwce_gnuplot.dat");
+  }
+  catch (const std::exception &e)
+  {
+    std::cerr << "Error: " << e.what() << "\n";
+    return 1;
+  }
 
   return 0;
 }
