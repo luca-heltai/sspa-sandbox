@@ -1,0 +1,94 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPricePoint}{Price\+Point}}
+\begin{DoxyCompactList}\small\item\em Parameters of the ETF. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structDrawdown}{Drawdown}}
+\begin{DoxyCompactList}\small\item\em Dorawdown is a function which calculate the maximum time passed between one maximum of the price and the next time in whcih that value is reached. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structPricePoint}{Price\+Point}} $>$ \mbox{\hyperlink{main_8cpp_a03ad094a4c39db86e6335827868b7896}{load\+\_\+prices}} (const std\+::string \&path)
+\item 
+double \mbox{\hyperlink{main_8cpp_ab84e15e9b6a9ad973fe0a62dfaa88d04}{mean}} (const std\+::vector$<$ double $>$ \&values)
+\item 
+double \mbox{\hyperlink{main_8cpp_a0997ddcc385246e8ab0cba45d26a7b2e}{variance}} (const std\+::vector$<$ double $>$ \&values)
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{main_8cpp_ae2ab958196b08a649842512077921bcb}{daily\+\_\+returns}} (const std\+::vector$<$ \mbox{\hyperlink{structPricePoint}{Price\+Point}} $>$ \&prices)
+\item 
+double \mbox{\hyperlink{main_8cpp_a257701fe0045868d5bf7cc2b20e5433b}{annualized\+\_\+return}} (const std\+::vector$<$ double $>$ \&daily)
+\item 
+\mbox{\hyperlink{structDrawdown}{Drawdown}} \mbox{\hyperlink{main_8cpp_ace919df08df49b315454c4ab7e58982a}{max\+\_\+drawdown}} (const std\+::vector$<$ \mbox{\hyperlink{structPricePoint}{Price\+Point}} $>$ \&prices)
+\item 
+void \mbox{\hyperlink{main_8cpp_acf303c2651f69106c9f72d170cb6100b}{write\+\_\+gnuplot\+\_\+series}} (const std\+::vector$<$ \mbox{\hyperlink{structPricePoint}{Price\+Point}} $>$ \&prices, const \mbox{\hyperlink{structDrawdown}{Drawdown}} \&dd, const std\+::string \&out\+\_\+path)
+\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a257701fe0045868d5bf7cc2b20e5433b}\label{main_8cpp_a257701fe0045868d5bf7cc2b20e5433b}} 
+\index{main.cpp@{main.cpp}!annualized\_return@{annualized\_return}}
+\index{annualized\_return@{annualized\_return}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{annualized\_return()}{annualized\_return()}}
+{\footnotesize\ttfamily double annualized\+\_\+return (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{daily }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ae2ab958196b08a649842512077921bcb}\label{main_8cpp_ae2ab958196b08a649842512077921bcb}} 
+\index{main.cpp@{main.cpp}!daily\_returns@{daily\_returns}}
+\index{daily\_returns@{daily\_returns}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{daily\_returns()}{daily\_returns()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ daily\+\_\+returns (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structPricePoint}{Price\+Point}} $>$ \&}]{prices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a03ad094a4c39db86e6335827868b7896}\label{main_8cpp_a03ad094a4c39db86e6335827868b7896}} 
+\index{main.cpp@{main.cpp}!load\_prices@{load\_prices}}
+\index{load\_prices@{load\_prices}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{load\_prices()}{load\_prices()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structPricePoint}{Price\+Point}} $>$ load\+\_\+prices (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ace919df08df49b315454c4ab7e58982a}\label{main_8cpp_ace919df08df49b315454c4ab7e58982a}} 
+\index{main.cpp@{main.cpp}!max\_drawdown@{max\_drawdown}}
+\index{max\_drawdown@{max\_drawdown}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{max\_drawdown()}{max\_drawdown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDrawdown}{Drawdown}} max\+\_\+drawdown (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structPricePoint}{Price\+Point}} $>$ \&}]{prices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ab84e15e9b6a9ad973fe0a62dfaa88d04}\label{main_8cpp_ab84e15e9b6a9ad973fe0a62dfaa88d04}} 
+\index{main.cpp@{main.cpp}!mean@{mean}}
+\index{mean@{mean}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{mean()}{mean()}}
+{\footnotesize\ttfamily double mean (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a0997ddcc385246e8ab0cba45d26a7b2e}\label{main_8cpp_a0997ddcc385246e8ab0cba45d26a7b2e}} 
+\index{main.cpp@{main.cpp}!variance@{variance}}
+\index{variance@{variance}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{variance()}{variance()}}
+{\footnotesize\ttfamily double variance (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_acf303c2651f69106c9f72d170cb6100b}\label{main_8cpp_acf303c2651f69106c9f72d170cb6100b}} 
+\index{main.cpp@{main.cpp}!write\_gnuplot\_series@{write\_gnuplot\_series}}
+\index{write\_gnuplot\_series@{write\_gnuplot\_series}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{write\_gnuplot\_series()}{write\_gnuplot\_series()}}
+{\footnotesize\ttfamily void write\+\_\+gnuplot\+\_\+series (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structPricePoint}{Price\+Point}} $>$ \&}]{prices,  }\item[{const \mbox{\hyperlink{structDrawdown}{Drawdown}} \&}]{dd,  }\item[{const std\+::string \&}]{out\+\_\+path }\end{DoxyParamCaption})}
+
