@@ -30,7 +30,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           # Assicurati che questo percorso sia corretto rispetto alla root del progetto
-          context: .
-          file: ./fausto/docker/Dockerfile
+          context: ./comandi-fausto
           push: true
           tags: ghcr.io/${{ github.repository }}:latest-fausto
