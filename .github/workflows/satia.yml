@@ -33,5 +33,6 @@ jobs:
         uses: docker/build-push-action@v4
         with: 
           context: ./satia/
+          file: ./satia/Dockerfile
           push: true
-          tags: ghcr.io/luca-helta/sspa-sandbox:latest
+          tags: ghcr.io/${{ github.repository }}:latest-satia
