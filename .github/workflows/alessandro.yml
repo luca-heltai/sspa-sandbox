@@ -35,4 +35,4 @@ jobs:
         with:
           context: ./Alessandro/docker
           push: true
-          tags: ghcr.io/${{ github.repository }}/ci-alessandro:latest-Alessandro
+          tags: ghcr.io/${{ toLower(github.repository) }}/ci-alessandro:latest-Alessandro
