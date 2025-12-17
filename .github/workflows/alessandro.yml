@@ -2,16 +2,13 @@ name: Alessandro workflow
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build-docker:
     runs-on: ubuntu-latest
-
     permissions:
       contents: read
       packages: write
@@ -19,6 +16,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Compute lowercased owner and repo
+        id: image
+        run: |
+          # split owner and repo
+          OWNER="${GITHUB_REPOSITORY%%/*}"
+          REPO="${GITHUB_REPOSITORY##*/}"
+
+          # lowercase (portable using tr)
+          OWNER_LC=$(echo "$OWNER" | tr '[:upper:]' '[:lower:]')
+          REPO_LC=$(echo "$REPO" | tr '[:upper:]' '[:lower:]')
+
+          # write outputs for later steps
+          echo "owner_lower=$OWNER_LC" >> "$GITHUB_OUTPUT"
+          echo "repo_lower=$REPO_LC"  >> "$GITHUB_OUTPUT"
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -30,15 +42,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Compute lowercased repo name
-        id: repo
-        run: |
-          # get repo name (no owner) and lowercase it
-          echo "repo_lower=$(echo ${GITHUB_REPOSITORY##*/} | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_OUTPUT"
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
           context: ./Alessandro/docker
           push: true
-          tags: ghcr.io/${{ steps.repo.outputs.repo_lower }}/ci-alessandro:latest-alessandro
+          # use lowercased owner and repo from the previous step
+          tags: ghcr.io/${{ steps.image.outputs.owner_lower }}/${{ steps.image.outputs.repo_lower }}/ci-alessandro:latest-alessandro
