@@ -30,9 +30,15 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Compute lowercased repo name
+        id: repo
+        run: |
+          # get repo name (no owner) and lowercase it
+          echo "repo_lower=$(echo ${GITHUB_REPOSITORY##*/} | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_OUTPUT"
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
           context: ./Alessandro/docker
           push: true
-          tags: ghcr.io/${{ toLower(github.repository) }}/ci-alessandro:latest-Alessandro
+          tags: ghcr.io/${{ steps.repo.outputs.repo_lower }}/ci-alessandro:latest-alessandro
