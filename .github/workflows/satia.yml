@@ -8,7 +8,7 @@ on:
     branches: 
      - main 
 
-jobs
+jobs:
  build docker: 
       runs-on: ubuntu-latest
       permissions:
@@ -28,7 +28,7 @@ jobs
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-     - name: Build and push Docker image
+      - name: Build and push Docker image
        uses: docker/build-push-action@v4
        with: 
           context: ./satia/
