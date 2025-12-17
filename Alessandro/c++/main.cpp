@@ -64,6 +64,22 @@ load_prices(const std::string &path)
   return data;
 }
 
+void
+write_prices(std::vector<PricePoint> prices, const std::string &path)
+{
+  std::ofstream out(path);
+  if (!out)
+    {
+      throw std::runtime_error("Cannot write file: " + path);
+    }
+  out << "date,open,high,low,close,adj_close,volume\n";
+  for (const auto &p : prices)
+    {
+      out << p.date << "," << p.open << "," << p.high << "," << p.low << ","
+          << p.close << "," << p.adj_close << "," << p.volume << "\n";
+    }
+}
+
 double
 mean(const std::vector<double> &values)
 {
@@ -163,6 +179,9 @@ write_gnuplot_series(const std::vector<PricePoint> &prices,
             << std::endl;
 }
 
+
+#ifndef EXCLUDE_MAIN
+
 int
 main(int argc, char **argv)
 {
@@ -210,3 +229,5 @@ main(int argc, char **argv)
 
   return 0;
 }
+
+#endif
