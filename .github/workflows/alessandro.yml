@@ -48,4 +48,4 @@ jobs:
           context: ./Alessandro/docker
           push: true
           # use lowercased owner and repo from the previous step
-          tags: ghcr.io/${{ steps.image.outputs.owner_lower }}/${{ steps.image.outputs.repo_lower }}/ci-alessandro:latest-alessandro
+          tags: ghcr.io/${{ steps.image.outputs.owner_lower }}/${{ steps.image.outputs.repo_lower }}:latest-alessandro
