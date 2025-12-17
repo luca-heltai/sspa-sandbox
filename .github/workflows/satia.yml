@@ -3,17 +3,17 @@ name: Satia Workflow
 on:
   push:
     branches: 
-     - main
+      - main
   pull_request:
     branches: 
-     - main 
+      - main 
 
 jobs:
- build docker: 
-      runs-on: ubuntu-latest
-      permissions:
-       contents: read
-       packages: write
+  build-docker: 
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Checkout repository
@@ -28,9 +28,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build and push Docker image
-       uses: docker/build-push-action@v4
-       with: 
+        uses: docker/build-push-action@v4
+        with: 
           context: ./satia/
           push: true
           tags: ghcr.io/luca-helta/sspa-sandbox:latest
