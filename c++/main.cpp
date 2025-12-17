@@ -206,6 +206,8 @@ write_gnuplot_series(const std::vector<PricePoint> &prices,
  * @return int 0 se tutto ok, 1 se si verifica un errore.
  */
 
+#ifndef MY_TESTING_MAIN
+
 int
 main(int argc, char **argv)
 {
@@ -253,3 +255,5 @@ main(int argc, char **argv)
 
   return 0;
 }
+
+#endif
