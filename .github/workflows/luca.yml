@@ -11,6 +11,9 @@ on:
 jobs:
   build-docker:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Checkout repository
@@ -29,5 +32,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: ./heltai/docker/
+          file: ./heltai/docker/Dockerfile
           push: true
           tags: ghcr.io/luca-heltai/sspa-sandbox:latest-luca
